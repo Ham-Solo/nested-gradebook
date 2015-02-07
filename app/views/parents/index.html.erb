@@ -1,4 +1,9 @@
-<p id="notice"><%= notice %></p>
+<div>
+  <% if current_user %>
+    Hello <%= current_user.name %>
+    <%= link_to "Log Out", root_path %>
+  <% end %>
+</div>
 
 <h1>Listing Parents</h1>
 
