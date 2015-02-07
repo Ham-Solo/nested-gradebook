@@ -14,10 +14,10 @@
   <h2> Assignments and Grades </h2>
   <ul>
     <% @teacher.students.each do |s| %>
-      <%= s.name %>
+      <h3><%= s.name %></h3>
       <% s.grades.each do |grade|%>
 
-        <li><%= grade.assignment.name %>:       <%= link_to grade.score, grade_path %></li>
+        <li><%= link_to grade.assignment.name, assignment_path %>:       <%= link_to grade.score, grade_path %></li>
       <% end %>
     <% end %>
   </ul>
