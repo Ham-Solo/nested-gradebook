@@ -11,19 +11,22 @@
 </p>
 
 <p>
-  <strong>Password digest:</strong>
-  <%= @student.password_digest %>
-</p>
-
-<p>
   <strong>Parent:</strong>
-  <%= @student.parent %>
+  <%= @student.parent.name %>
 </p>
 
 <p>
   <strong>Teacher:</strong>
-  <%= @student.teacher %>
+  <%= @student.teacher.name %>
 </p>
 
+<h2> Assignments and Grades </h2>
+  <% if @student.grades.any? %>
+    <ul>
+        <% @student.assignments.each do |a|%>
+        <li> <%= link_to assignment, assignment %></li>
+        <%end  %>
+    </ul>
+  <% end %>
 <%= link_to 'Edit', edit_student_path(@student) %> |
 <%= link_to 'Back', students_path %>
