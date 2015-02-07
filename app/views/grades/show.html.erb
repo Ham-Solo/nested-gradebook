@@ -7,12 +7,12 @@
 
 <p>
   <strong>Assignment:</strong>
-  <%= @grade.assignment %>
+  <%= @grade.assignment.name %>
 </p>
 
 <p>
   <strong>Student:</strong>
-  <%= @grade.student %>
+  <%= @grade.student.name %>
 </p>
 
 <%= link_to 'Edit', edit_grade_path(@grade) %> |
