@@ -20,13 +20,18 @@
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :parent %><br>
+    <%= f.label :parent_id %><br>
     <%= f.text_field :parent_id %>
   </div>
   <div class="field">
-    <%= f.label :teacher_id %><br>
-    <%= f.text_field :teacher_id %>
-  </div>
+    <%= f.fields_for :teacher do |teacher| %>
+    <div class "teacher_fields">
+      <div class ="field">
+        <%= teacher.label :name %> <br>
+        <%= teacher.text_field :name %>
+      </div>
+    </div>
+    <% end%>
   <div class="actions">
     <%= f.submit %>
   </div>

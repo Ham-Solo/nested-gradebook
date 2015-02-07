@@ -10,10 +10,18 @@
   <%= @teacher.email %>
 </p>
 
-<p>
-  <strong>Password digest:</strong>
-  <%= @teacher.password_digest %>
-</p>
+<% if @teacher.students.any? %>
+  <h2> Assignments and Grades </h2>
+  <ul>
+    <% @teacher.students.each do |s| %>
+      <%= s.name %>
+      <% s.grades.each do |grade|%>
+
+        <li><%= grade.assignment.name %>:       <%= link_to grade.score, grade_path %></li>
+      <% end %>
+    <% end %>
+  </ul>
+<% end %>
 
 <%= link_to 'Edit', edit_teacher_path(@teacher) %> |
 <%= link_to 'Back', teachers_path %>

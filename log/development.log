@@ -3274,3 +3274,3042 @@ Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::
 
 
 Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 14:26:04 -0500
+
+
+Started GET "/students" for ::1 at 2015-02-07 14:30:37 -0500
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students"[0m
+  [1m[35mParent Load (0.1ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTeacher Load (0.2ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mParent Load (0.3ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mParent Load (0.1ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered students/index.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 123ms (Views: 121.3ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:30:37 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 14:30:38 -0500
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 14:30:41 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/_form.html.erb (1.8ms)
+  Rendered students/edit.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 111ms (Views: 110.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 14:32:27 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered students/_form.html.erb (3.3ms)
+  Rendered students/edit.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `name' for :parent:Symbol):
+    20:     <%= f.text_field :email %>
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :parent.name %><br>
+    24:     <%= f.text_field :parent_id.name %>
+    25:   </div>
+    26:   <div class="field">
+  app/views/students/_form.html.erb:23:in `block in _app_views_students__form_html_erb___3414244701566503411_70197344066020'
+  app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___3414244701566503411_70197344066020'
+  app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb___1318247402034964447_70197296422400'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (24.8ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 14:32:48 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.2ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/_form.html.erb (3.4ms)
+  Rendered students/edit.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 8ms
+
+ActionView::Template::Error (undefined method `name' for :parent_id:Symbol):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :parent %><br>
+    24:     <%= f.text_field :parent_id.name %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :teacher_id.name %><br>
+  app/views/students/_form.html.erb:24:in `block in _app_views_students__form_html_erb___3414244701566503411_70197334580560'
+  app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___3414244701566503411_70197334580560'
+  app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb___1318247402034964447_70197296422400'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (24.0ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 14:32:58 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mParent Load (0.1ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/_form.html.erb (8.2ms)
+  Rendered students/edit.html.erb within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined method `name' for :teacher_id:Symbol):
+    24:     <%= f.text_field :parent %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :teacher_id.name %><br>
+    28:     <%= f.text_field :teacher_id.name %>
+    29:   </div>
+    30:   <div class="actions">
+  app/views/students/_form.html.erb:27:in `block in _app_views_students__form_html_erb___3414244701566503411_70197290679740'
+  app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___3414244701566503411_70197290679740'
+  app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb___1318247402034964447_70197296422400'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (7.0ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (25.2ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 14:33:32 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mParent Load (0.1ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered students/_form.html.erb (3.9ms)
+  Rendered students/edit.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 122ms (Views: 120.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 14:33:33 -0500
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 14:33:47 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.2ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/_form.html.erb (3.9ms)
+  Rendered students/edit.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `name' for :parent:Symbol):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :parent %><br>
+    24:     <%= f.text_field :parent.name %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :teacher%><br>
+  app/views/students/_form.html.erb:24:in `block in _app_views_students__form_html_erb___3414244701566503411_70197295351400'
+  app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___3414244701566503411_70197295351400'
+  app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb___1318247402034964447_70197296422400'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.3ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (25.3ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 14:34:10 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered students/_form.html.erb (4.0ms)
+  Rendered students/edit.html.erb within layouts/application (4.9ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `parent_name' for #<Student:0x007fb02faab518>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :parent %><br>
+    24:     <%= f.text_field :parent_name %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :teacher_name%><br>
+  app/views/students/_form.html.erb:24:in `block in _app_views_students__form_html_erb___3414244701566503411_70197345129600'
+  app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___3414244701566503411_70197345129600'
+  app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb___1318247402034964447_70197296422400'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.0ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (30.5ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 14:34:52 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/_form.html.erb (3.3ms)
+  Rendered students/edit.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `parent_name' for #<Student:0x007fb02e000c90>):
+    21:   </div>
+    22:   <div class="field">
+    23:     <%= f.label :parent %><br>
+    24:     <%= f.text_field :parent_name %>
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :teacher_name%><br>
+  app/views/students/_form.html.erb:24:in `block in _app_views_students__form_html_erb___3414244701566503411_70197345129600'
+  app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___3414244701566503411_70197345129600'
+  app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb___1318247402034964447_70197296422400'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (8.2ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (29.9ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 14:35:33 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered students/_form.html.erb (2.5ms)
+  Rendered students/edit.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 128ms (Views: 126.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:35:33 -0500
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 14:35:58 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/_form.html.erb (5.4ms)
+  Rendered students/edit.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `merge' for :name:Symbol):
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :teacher_id%><br>
+    28:     <%= f.text_field :teacher_id, :name %>
+    29:   </div>
+    30:   <div class="actions">
+    31:     <%= f.submit %>
+  app/views/students/_form.html.erb:28:in `block in _app_views_students__form_html_erb___3414244701566503411_70197344294280'
+  app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___3414244701566503411_70197344294280'
+  app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb___1318247402034964447_70197296422400'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.6ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (24.2ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 14:37:01 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered students/_form.html.erb (5.7ms)
+  Rendered students/edit.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 10ms
+
+ActionView::Template::Error (wrong number of arguments (4 for 1..2)):
+    25:   </div>
+    26:   <div class="field">
+    27:     <%= f.label :teacher_id%><br>
+    28:     <%= f.text_field :teacher_id, Teacher.all, :id, :name %>
+    29:   </div>
+    30:   <div class="actions">
+    31:     <%= f.submit %>
+  app/views/students/_form.html.erb:28:in `block in _app_views_students__form_html_erb___3414244701566503411_70197345095700'
+  app/views/students/_form.html.erb:1:in `_app_views_students__form_html_erb___3414244701566503411_70197345095700'
+  app/views/students/edit.html.erb:3:in `_app_views_students_edit_html_erb___1318247402034964447_70197296422400'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (25.6ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 14:37:14 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTeacher Load (0.2ms)[0m  [1mSELECT "teachers".* FROM "teachers"[0m
+  Rendered students/_form.html.erb (12.4ms)
+  Rendered students/edit.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 117ms (Views: 116.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 14:37:14 -0500
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 14:54:49 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered students/_form.html.erb (4.6ms)
+  Rendered students/edit.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 108ms (Views: 107.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:54:49 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 14:54:50 -0500
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 14:56:08 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered students/_form.html.erb (11.4ms)
+  Rendered students/edit.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 145ms (Views: 135.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 14:56:08 -0500
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 14:58:07 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTeacher Load (0.2ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered students/_form.html.erb (10.1ms)
+  Rendered students/edit.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 134ms (Views: 124.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:58:07 -0500
+
+
+Started PATCH "/students/1" for ::1 at 2015-02-07 14:58:11 -0500
+Processing by StudentsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EdW1vMycLRBBYNyAkHbFV2GUPY9GY9raHSMzNcl5sjN5cz2y6OiDHJaRLd4th1yWrAcXlGqzfH2Vj0juK1OtdQ==", "student"=>{"name"=>"Lakeshia Carlson", "email"=>"lkc@nyu.edu", "parent_id"=>"1", "teacher_attributes"=>{"name"=>"Bob Barker Jr", "id"=>"2"}}, "commit"=>"Update Student", "id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mSQL (0.3ms)[0m  UPDATE "teachers" SET "name" = ?, "updated_at" = ? WHERE "teachers"."id" = ?  [["name", "Bob Barker Jr"], ["updated_at", "2015-02-07 19:58:11.860134"], ["id", 2]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/students/1
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/students/1" for ::1 at 2015-02-07 14:58:11 -0500
+Processing by StudentsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mParent Load (0.2ms)[0m  [1mSELECT  "parents".* FROM "parents" WHERE "parents"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTeacher Load (0.3ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mGrade Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "grades" WHERE "grades"."student_id" = ? LIMIT 1[0m  [["student_id", 1]]
+  [1m[35mGrade Load (0.2ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 1]]
+  Rendered students/show.html.erb within layouts/application (28.8ms)
+Completed 200 OK in 148ms (Views: 145.9ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 14:58:12 -0500
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 15:00:48 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 18ms
+
+NoMethodError (undefined method `val' for #<Arel::Nodes::BindParam:0x007fb02cf9f5e0>):
+  app/controllers/students_controller.rb:23:in `edit'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (25.6ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 15:01:24 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.2ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 18ms
+
+NoMethodError (undefined method `val' for #<Arel::Nodes::BindParam:0x007fb02e530530>):
+  app/controllers/students_controller.rb:23:in `edit'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.0ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (24.9ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 15:03:55 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 18ms
+
+NoMethodError (undefined method `val' for #<Arel::Nodes::BindParam:0x007fb02e2f0b58>):
+  app/controllers/students_controller.rb:23:in `edit'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (27.9ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 15:03:58 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `val' for #<Arel::Nodes::BindParam:0x007fb02c83b740>):
+  app/controllers/students_controller.rb:23:in `edit'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (27.0ms)
+
+
+Started GET "/students/1/edit" for ::1 at 2015-02-07 15:10:31 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered students/_form.html.erb (4.6ms)
+  Rendered students/edit.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 129ms (Views: 121.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:10:31 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:10:31 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:10:31 -0500
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:10:31 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:10:31 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:10:31 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:10:31 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:10:31 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:10:31 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:10:31 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:10:31 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:10:31 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:10:32 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:10:32 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:10:32 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:10:32 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:10:32 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:10:32 -0500
+
+
+Started GET "/teachers" for ::1 at 2015-02-07 15:10:39 -0500
+Processing by TeachersController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+ArgumentError (No association found for name `student'. Has it been defined yet?):
+  app/models/teacher.rb:4:in `<class:Teacher>'
+  app/models/teacher.rb:1:in `<top (required)>'
+  app/controllers/teachers_controller.rb:7:in `index'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (25.2ms)
+
+
+Started GET "/teachers" for ::1 at 2015-02-07 15:12:50 -0500
+Processing by TeachersController#index as HTML
+  [1m[35mTeacher Load (0.4ms)[0m  SELECT "teachers".* FROM "teachers"
+  Rendered teachers/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 143ms (Views: 138.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:12:50 -0500
+
+
+Started GET "/teachers/new" for ::1 at 2015-02-07 15:13:15 -0500
+Processing by TeachersController#new as HTML
+  Rendered teachers/_form.html.erb (2.4ms)
+  Rendered teachers/new.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 122ms (Views: 121.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/teachers" for ::1 at 2015-02-07 15:13:42 -0500
+Processing by TeachersController#index as HTML
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT "teachers".* FROM "teachers"[0m
+  Rendered teachers/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 128ms (Views: 127.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/teachers" for ::1 at 2015-02-07 15:16:13 -0500
+Processing by TeachersController#index as HTML
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT "teachers".* FROM "teachers"
+  Rendered teachers/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 116ms (Views: 115.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:16:13 -0500
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:16:15 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered teachers/show.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/Users/solomonghilliard1/TIY/Week4/nested-gradebook/app/views/teachers/show.html.erb:17: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...d=( if @teacher.students.any? );@output_buffer.safe_append='
+...                               ^
+/Users/solomonghilliard1/TIY/Week4/nested-gradebook/app/views/teachers/show.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+ end 
+    ^
+/Users/solomonghilliard1/TIY/Week4/nested-gradebook/app/views/teachers/show.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/solomonghilliard1/TIY/Week4/nested-gradebook/app/views/teachers/show.html.erb:34: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/teachers/show.html.erb:17: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/teachers/show.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/show.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/teachers/show.html.erb:34: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (23.4ms)
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:16:16 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered teachers/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/Users/solomonghilliard1/TIY/Week4/nested-gradebook/app/views/teachers/show.html.erb:17: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+...d=( if @teacher.students.any? );@output_buffer.safe_append='
+...                               ^
+/Users/solomonghilliard1/TIY/Week4/nested-gradebook/app/views/teachers/show.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+ end 
+    ^
+/Users/solomonghilliard1/TIY/Week4/nested-gradebook/app/views/teachers/show.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/solomonghilliard1/TIY/Week4/nested-gradebook/app/views/teachers/show.html.erb:34: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/teachers/show.html.erb:17: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+  app/views/teachers/show.html.erb:26: syntax error, unexpected keyword_end, expecting ')'
+  app/views/teachers/show.html.erb:32: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/teachers/show.html.erb:34: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.1ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (24.6ms)
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:17:07 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 1]]
+  Rendered teachers/show.html.erb within layouts/application (11.1ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `grades' for nil:NilClass):
+    16: </p>
+    17: <% if @teacher.students.any? %>
+    18:   <h2> Assignments and Grades </h2>
+    19:   <% if @student.grades.any? %>
+    20:   <ul>
+    21:     <% @student.grades.each do |grade|%>
+    22:     <li> <%= link_to grade.score, grade_path %></li>
+  app/views/teachers/show.html.erb:19:in `_app_views_teachers_show_html_erb___241556146901916710_70197321214040'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (25.2ms)
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:18:51 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 1]]
+  Rendered teachers/show.html.erb within layouts/application (9.8ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `grades' for nil:NilClass):
+    16: </p>
+    17: <% if @teacher.students.any? %>
+    18:   <h2> Assignments and Grades </h2>
+    19:   <% if @student.grades.any? %>
+    20:   <ul>
+    21:     <% @student.grades.each do |grade|%>
+    22:     <li> <%= link_to grade.score, grade_path %></li>
+  app/views/teachers/show.html.erb:19:in `_app_views_teachers_show_html_erb___241556146901916710_70197321214040'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.4ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (26.4ms)
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:21:00 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStudent Exists (0.3ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 1]]
+  Rendered teachers/show.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `grades' for nil:NilClass):
+    16: </p>
+    17: <% if @teacher.students.any? %>
+    18:   <h2> Assignments and Grades </h2>
+    19:   <% if @student.grades.any? %>
+    20:   <ul>
+    21:     <% @student.grades.each do |grade|%>
+    22:     <li> <%= link_to grade.score, grade_path %></li>
+  app/views/teachers/show.html.erb:19:in `_app_views_teachers_show_html_erb___241556146901916710_70197321214040'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.1ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (27.6ms)
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:21:12 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 1]]
+  Rendered teachers/show.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (undefined method `grades' for nil:NilClass):
+    16: </p>
+    17: <% if @teacher.students.any? %>
+    18:   <h2> Assignments and Grades </h2>
+    19:   <% if @student.grades.any? %>
+    20:   <ul>
+    21:     <% @student.grades.each do |grade|%>
+    22:     <li> <%= link_to grade.score, grade_path %></li>
+  app/views/teachers/show.html.erb:19:in `_app_views_teachers_show_html_erb___241556146901916710_70197321214040'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (24.6ms)
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:21:38 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.3ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?[0m  [["teacher_id", 1]]
+  Rendered teachers/show.html.erb within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `grades' for #<Student::ActiveRecord_Associations_CollectionProxy:0x007fb02faaa938>):
+    16: </p>
+    17: <% if @teacher.students.any? %>
+    18:   <h2> Assignments and Grades </h2>
+    19:   <% if @teacher.students.grades.any? %>
+    20:   <ul>
+    21:     <% @teacher.students.grades.each do |grade|%>
+    22:     <li> <%= link_to grade.score, grade_path %></li>
+  app/views/teachers/show.html.erb:19:in `_app_views_teachers_show_html_erb___241556146901916710_70197345638240'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (24.8ms)
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:23:21 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 3ms
+
+ArgumentError (No association found for name `grades'. Has it been defined yet?):
+  app/models/teacher.rb:5:in `<class:Teacher>'
+  app/models/teacher.rb:1:in `<top (required)>'
+  app/controllers/teachers_controller.rb:67:in `set_teacher'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.5ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (22.7ms)
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:24:00 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1[0m  [["teacher_id", 1]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?  [["teacher_id", 1]]
+  Rendered teachers/show.html.erb within layouts/application (13.9ms)
+Completed 500 Internal Server Error in 27ms
+
+ActionView::Template::Error (undefined method `grades' for #<Student::ActiveRecord_Associations_CollectionProxy:0x007fb02e404698>):
+    16: </p>
+    17: <% if @teacher.students.any? %>
+    18:   <h2> Assignments and Grades </h2>
+    19:   <% if @teacher.students.grades.any? %>
+    20:   <ul>
+    21:     <% @teacher.students.grades.each do |grade|%>
+    22:     <li> <%= link_to grade.score, grade_path %></li>
+  app/views/teachers/show.html.erb:19:in `_app_views_teachers_show_html_erb___241556146901916710_70197345638240'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.0ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (26.2ms)
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:24:30 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.2ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?[0m  [["teacher_id", 1]]
+  Rendered teachers/show.html.erb within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined method `grade' for #<Student::ActiveRecord_Associations_CollectionProxy:0x007fb02ae8cdf8>):
+    16: </p>
+    17: <% if @teacher.students.any? %>
+    18:   <h2> Assignments and Grades </h2>
+    19:   <% if @teacher.students.grade.any? %>
+    20:   <ul>
+    21:     <% @teacher.students.grades.each do |grade|%>
+    22:     <li> <%= link_to grade.score, grade_path %></li>
+  app/views/teachers/show.html.erb:19:in `_app_views_teachers_show_html_erb___241556146901916710_70197305565260'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (26.2ms)
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:27:06 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1[0m  [["teacher_id", 1]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?  [["teacher_id", 1]]
+  Rendered teachers/show.html.erb within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 9ms
+
+ActionView::Template::Error (undefined method `s' for #<Teacher:0x007fb02cf24278>):
+    18:   <h2> Assignments and Grades </h2>
+    19:   <ul>
+    20:     <% @teacher.students.each do |s| %>
+    21:     <% @teacher.s.grades.each do |grade|%>
+    22:     <li> <%= link_to grade.score, grade_path %></li>
+    23:     <%end  %>
+    24:   </ul>
+  app/views/teachers/show.html.erb:21:in `block in _app_views_teachers_show_html_erb___241556146901916710_70197291404640'
+  app/views/teachers/show.html.erb:20:in `_app_views_teachers_show_html_erb___241556146901916710_70197291404640'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.2ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (25.0ms)
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:27:32 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 1]]
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?[0m  [["teacher_id", 1]]
+  [1m[35mGrade Load (0.1ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 3]]
+  Rendered teachers/show.html.erb within layouts/application (16.1ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"students", :id=>nil} missing required keys: [:id]):
+    24:   </ul>
+    25:   <% end %>
+    26: <% end %>
+    27: <%= link_to 'Edit', edit_student_path(@student) %> |
+    28: <%= link_to 'Back', students_path %>
+    29: <%= link_to 'Edit', edit_teacher_path(@teacher) %> |
+    30: <%= link_to 'Back', teachers_path %>
+  app/views/teachers/show.html.erb:27:in `_app_views_teachers_show_html_erb___241556146901916710_70197345046480'
+
+
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (21.5ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/solomonghilliard1/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (39.3ms)
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:27:52 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.2ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?[0m  [["teacher_id", 1]]
+  [1m[35mGrade Load (0.3ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 3]]
+  Rendered teachers/show.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 119ms (Views: 116.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:27:52 -0500
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:28:30 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?[0m  [["teacher_id", 1]]
+  [1m[35mGrade Load (0.1ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 3]]
+  Rendered teachers/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 137ms (Views: 135.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:28:30 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:28:30 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:28:30 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:28:30 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:28:30 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:28:30 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:28:30 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:28:30 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:28:30 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:28:30 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:28:30 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:28:30 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:28:30 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:28:30 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:28:30 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:28:31 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:28:31 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:28:31 -0500
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:28:56 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.2ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?[0m  [["teacher_id", 1]]
+  [1m[35mGrade Load (0.1ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 3]]
+  Rendered teachers/show.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 119ms (Views: 117.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:28:56 -0500
+
+
+Started GET "/grades/1" for ::1 at 2015-02-07 15:29:05 -0500
+Processing by GradesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGrade Load (0.2ms)[0m  [1mSELECT  "grades".* FROM "grades" WHERE "grades"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered grades/show.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 133ms (Views: 130.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/grades" for ::1 at 2015-02-07 15:29:07 -0500
+Processing by GradesController#index as HTML
+  [1m[35mGrade Load (0.2ms)[0m  SELECT "grades".* FROM "grades"
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 7]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered grades/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 136ms (Views: 134.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/grades/1" for ::1 at 2015-02-07 15:29:12 -0500
+Processing by GradesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT  "grades".* FROM "grades" WHERE "grades"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered grades/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 116ms (Views: 114.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/grades/1" for ::1 at 2015-02-07 15:29:14 -0500
+Processing by GradesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGrade Load (0.2ms)[0m  SELECT  "grades".* FROM "grades" WHERE "grades"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered grades/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 119ms (Views: 117.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:29:46 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?[0m  [["teacher_id", 1]]
+  [1m[35mGrade Load (0.1ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 3]]
+  Rendered teachers/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 104ms (Views: 102.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:29:46 -0500
+
+
+Started GET "/grades/1" for ::1 at 2015-02-07 15:29:49 -0500
+Processing by GradesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT  "grades".* FROM "grades" WHERE "grades"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered grades/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 121ms (Views: 106.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/grades/1" for ::1 at 2015-02-07 15:29:52 -0500
+Processing by GradesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGrade Load (0.1ms)[0m  SELECT  "grades".* FROM "grades" WHERE "grades"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered grades/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 119ms (Views: 118.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/grades/1" for ::1 at 2015-02-07 15:29:55 -0500
+Processing by GradesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT  "grades".* FROM "grades" WHERE "grades"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered grades/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 112ms (Views: 111.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/grades/1" for ::1 at 2015-02-07 15:29:58 -0500
+Processing by GradesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGrade Load (0.1ms)[0m  SELECT  "grades".* FROM "grades" WHERE "grades"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered grades/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 119ms (Views: 117.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/grades/1" for ::1 at 2015-02-07 15:31:18 -0500
+Processing by GradesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT  "grades".* FROM "grades" WHERE "grades"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered grades/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 100ms (Views: 98.6ms | ActiveRecord: 0.2ms)
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "assignments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "subject_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE  INDEX "index_assignments_on_subject_id" ON "assignments" ("subject_id")[0m
+  [1m[35m (2.0ms)[0m  CREATE TABLE "grades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "score" integer, "assignment_id" integer, "student_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE  INDEX "index_grades_on_assignment_id" ON "grades" ("assignment_id")[0m
+  [1m[35m (0.5ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_grades_on_assignment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_grades_on_assignment_id' AND type='index'
+
+  [1m[36m (1.2ms)[0m  [1mCREATE  INDEX "index_grades_on_student_id" ON "grades" ("student_id")[0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "parents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (2.4ms)[0m  [1mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "parent_id" integer, "teacher_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.5ms)[0m  CREATE  INDEX "index_students_on_parent_id" ON "students" ("parent_id")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_students_on_parent_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_students_on_parent_id' AND type='index'
+[0m
+  [1m[35m (1.5ms)[0m  CREATE  INDEX "index_students_on_teacher_id" ON "students" ("teacher_id")
+  [1m[36m (1.5ms)[0m  [1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (2.1ms)[0m  CREATE TABLE "teachers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (2.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150207165751')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150207165405')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150207165428')
+  [1m[36m (1.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150207165551')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150207165613')
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150207165701')[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "assignments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "subject_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (2.0ms)[0m  CREATE  INDEX "index_assignments_on_subject_id" ON "assignments" ("subject_id")
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "grades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "score" integer, "assignment_id" integer, "student_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.6ms)[0m  CREATE  INDEX "index_grades_on_assignment_id" ON "grades" ("assignment_id")
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_grades_on_assignment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_grades_on_assignment_id' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  CREATE  INDEX "index_grades_on_student_id" ON "grades" ("student_id")
+  [1m[36m (3.3ms)[0m  [1mCREATE TABLE "parents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (8.5ms)[0m  CREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "parent_id" integer, "teacher_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.1ms)[0m  [1mCREATE  INDEX "index_students_on_parent_id" ON "students" ("parent_id")[0m
+  [1m[35m (0.6ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_students_on_parent_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_students_on_parent_id' AND type='index'
+
+  [1m[36m (1.8ms)[0m  [1mCREATE  INDEX "index_students_on_teacher_id" ON "students" ("teacher_id")[0m
+  [1m[35m (1.6ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "teachers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (3.3ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (1.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150207165751')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150207165405')
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150207165428')[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150207165551')
+  [1m[36m (1.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150207165613')[0m
+  [1m[35m (1.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150207165701')
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "teachers" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tyrion Lanisster"], ["email", "gold@rock.com"], ["password_digest", "$2a$10$.ToxvDTy9cJfddPCXHzYO.uFsjbDu8vlN9zWOU5iVDwS4V3CIRJve"], ["created_at", "2015-02-07 20:34:19.254091"], ["updated_at", "2015-02-07 20:34:19.254091"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "teachers" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Bob Barker"], ["email", "price@right.com"], ["password_digest", "$2a$10$xXjkyEUe0g9hniLoVruMweaaH4U2cKVzJYyE/3PlucIju/vBPB6ea"], ["created_at", "2015-02-07 20:34:19.339300"], ["updated_at", "2015-02-07 20:34:19.339300"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "teachers" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rob Johnston"], ["email", "robby@ecu.edu"], ["password_digest", "$2a$10$vCh5/WaPnQdOTXdEyCld9e6nWzGhNzegsS2Kx.M./oWHXrEFoPhPm"], ["created_at", "2015-02-07 20:34:19.413284"], ["updated_at", "2015-02-07 20:34:19.413284"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "parents" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Carl Carlson"], ["email", "springfield@somestate.com"], ["password_digest", "$2a$10$JU3rxKYO0PNEkUxlwimkOeaWcvCQvEpg.GG9y6K9b53BmrKZhOJ1i"], ["created_at", "2015-02-07 20:34:19.562706"], ["updated_at", "2015-02-07 20:34:19.562706"]]
+  [1m[36m (8.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "parents" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ronda Bazemore"], ["email", "ron@howard.com"], ["password_digest", "$2a$10$8GjrO9SDC06S1/SlkvAqqefLfpFj5ds.xXtfcWFA2M1GzDuPQ.75O"], ["created_at", "2015-02-07 20:34:19.651056"], ["updated_at", "2015-02-07 20:34:19.651056"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "parents" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Perrin Wolf"], ["email", "hammer@wot.com"], ["password_digest", "$2a$10$ZhlxhDJ/uoFJiTHyURBpuOeP8XuOJYEKdePgalVIWSPNz7miHk10e"], ["created_at", "2015-02-07 20:34:19.735393"], ["updated_at", "2015-02-07 20:34:19.735393"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mParent Load (0.2ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."name" = ? LIMIT 1  [["name", "Carl Carlson"]]
+  [1m[36mTeacher Load (0.5ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."name" = ? LIMIT 1[0m  [["name", "Bob Barker"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "students" ("name", "email", "password_digest", "parent_id", "teacher_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lakeshia Carlson"], ["email", "lkc@nyu.edu"], ["password_digest", "$2a$10$o2al8yz20a1UG4Qfb/YkHuywgat0pTuplJ7LKOhNdAWt/USGBx75G"], ["parent_id", 1], ["teacher_id", 2], ["created_at", "2015-02-07 20:34:19.849312"], ["updated_at", "2015-02-07 20:34:19.849312"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mParent Load (0.1ms)[0m  [1mSELECT  "parents".* FROM "parents" WHERE "parents"."name" = ? LIMIT 1[0m  [["name", "Ronda Bazemore"]]
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."name" = ? LIMIT 1  [["name", "Rob Johnston"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("name", "email", "password_digest", "parent_id", "teacher_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Tristan Bazemore"], ["email", "tristan@nyu.edu"], ["password_digest", "$2a$10$sQRIIjGsPymBgBLro/ISg.dgoYEn6dq4A9y8KHRNNsfrwHT3J.TNm"], ["parent_id", 2], ["teacher_id", 3], ["created_at", "2015-02-07 20:34:19.927081"], ["updated_at", "2015-02-07 20:34:19.927081"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mParent Load (0.1ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."name" = ? LIMIT 1  [["name", "Perrin Wolf"]]
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."name" = ? LIMIT 1[0m  [["name", "Tyrion Lanisster"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "students" ("name", "email", "password_digest", "parent_id", "teacher_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rand Wolf"], ["email", "fire@wot.com"], ["password_digest", "$2a$10$txDfrG08ylnwXs2OM4ZdVegLKvY7hSApIJJDgHH6Lzcf2svuHJcca"], ["parent_id", 3], ["teacher_id", 1], ["created_at", "2015-02-07 20:34:20.002948"], ["updated_at", "2015-02-07 20:34:20.002948"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mParent Load (0.1ms)[0m  [1mSELECT  "parents".* FROM "parents" WHERE "parents"."name" = ? LIMIT 1[0m  [["name", "Perrin Wolf"]]
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."name" = ? LIMIT 1  [["name", "Tyrion Lanisster"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("name", "email", "password_digest", "parent_id", "teacher_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Mat Wolf"], ["email", "gambke@wot.com"], ["password_digest", "$2a$10$rBiy/P5uzEPjKTL1mYFztuWngqb2k098aWX2xLSoGGaSLHVKiImgC"], ["parent_id", 3], ["teacher_id", 1], ["created_at", "2015-02-07 20:34:20.086047"], ["updated_at", "2015-02-07 20:34:20.086047"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Math"], ["created_at", "2015-02-07 20:34:20.092065"], ["updated_at", "2015-02-07 20:34:20.092065"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Biology"], ["created_at", "2015-02-07 20:34:20.094655"], ["updated_at", "2015-02-07 20:34:20.094655"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Computer Science"], ["created_at", "2015-02-07 20:34:20.096827"], ["updated_at", "2015-02-07 20:34:20.096827"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "PE"], ["created_at", "2015-02-07 20:34:20.099426"], ["updated_at", "2015-02-07 20:34:20.099426"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "History"], ["created_at", "2015-02-07 20:34:20.101470"], ["updated_at", "2015-02-07 20:34:20.101470"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "British Lit"], ["created_at", "2015-02-07 20:34:20.104308"], ["updated_at", "2015-02-07 20:34:20.104308"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.8ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "PE"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test #1"], ["subject_id", 4], ["created_at", "2015-02-07 20:34:20.120332"], ["updated_at", "2015-02-07 20:34:20.120332"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.3ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "History"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "HW Assignment #3"], ["subject_id", 5], ["created_at", "2015-02-07 20:34:20.125140"], ["updated_at", "2015-02-07 20:34:20.125140"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.5ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "Computer Science"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test 4"], ["subject_id", 3], ["created_at", "2015-02-07 20:34:20.131820"], ["updated_at", "2015-02-07 20:34:20.131820"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "PE"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Physical Test"], ["subject_id", 4], ["created_at", "2015-02-07 20:34:20.139223"], ["updated_at", "2015-02-07 20:34:20.139223"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "British Lit"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "HW Assignment #4"], ["subject_id", 6], ["created_at", "2015-02-07 20:34:20.142041"], ["updated_at", "2015-02-07 20:34:20.142041"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "Biology"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Final Exam"], ["subject_id", 2], ["created_at", "2015-02-07 20:34:20.144893"], ["updated_at", "2015-02-07 20:34:20.144893"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.3ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "Math"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Make up Quiz # 2"], ["subject_id", 1], ["created_at", "2015-02-07 20:34:20.149336"], ["updated_at", "2015-02-07 20:34:20.149336"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.3ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "HW Assignment #4"]]
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Tristan Bazemore"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 75], ["assignment_id", 5], ["student_id", 2], ["created_at", "2015-02-07 20:34:20.161816"], ["updated_at", "2015-02-07 20:34:20.161816"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Physical Test"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Lakeshia Carlson"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 88], ["assignment_id", 4], ["student_id", 1], ["created_at", "2015-02-07 20:34:20.170043"], ["updated_at", "2015-02-07 20:34:20.170043"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "HW Assignment #4"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Lakeshia Carlson"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 92], ["assignment_id", 5], ["student_id", 1], ["created_at", "2015-02-07 20:34:20.174306"], ["updated_at", "2015-02-07 20:34:20.174306"]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Make up Quiz # 2"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Tristan Bazemore"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 55], ["assignment_id", 7], ["student_id", 2], ["created_at", "2015-02-07 20:34:20.181399"], ["updated_at", "2015-02-07 20:34:20.181399"]]
+  [1m[36m (3.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.3ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "Test #1"]]
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Lakeshia Carlson"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 77], ["assignment_id", 1], ["student_id", 1], ["created_at", "2015-02-07 20:34:20.189860"], ["updated_at", "2015-02-07 20:34:20.189860"]]
+  [1m[35m (2.9ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Physical Test"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Lakeshia Carlson"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 82], ["assignment_id", 4], ["student_id", 1], ["created_at", "2015-02-07 20:34:20.200509"], ["updated_at", "2015-02-07 20:34:20.200509"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.5ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "HW Assignment #4"]]
+  [1m[36mStudent Load (0.3ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Tristan Bazemore"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 56], ["assignment_id", 5], ["student_id", 2], ["created_at", "2015-02-07 20:34:20.206702"], ["updated_at", "2015-02-07 20:34:20.206702"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.3ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Test #1"]]
+  [1m[35mStudent Load (0.3ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Lakeshia Carlson"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 100], ["assignment_id", 1], ["student_id", 1], ["created_at", "2015-02-07 20:34:20.213824"], ["updated_at", "2015-02-07 20:34:20.213824"]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "Make up Quiz # 2"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Tristan Bazemore"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 98], ["assignment_id", 7], ["student_id", 2], ["created_at", "2015-02-07 20:34:20.224085"], ["updated_at", "2015-02-07 20:34:20.224085"]]
+  [1m[35m (6.7ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Final Exam"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Lakeshia Carlson"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 44], ["assignment_id", 6], ["student_id", 1], ["created_at", "2015-02-07 20:34:20.236374"], ["updated_at", "2015-02-07 20:34:20.236374"]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "HW Assignment #4"]]
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Tristan Bazemore"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 55], ["assignment_id", 5], ["student_id", 2], ["created_at", "2015-02-07 20:34:20.245637"], ["updated_at", "2015-02-07 20:34:20.245637"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.7ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Final Exam"]]
+  [1m[35mStudent Load (0.5ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Rand Wolf"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 66], ["assignment_id", 6], ["student_id", 3], ["created_at", "2015-02-07 20:34:20.257148"], ["updated_at", "2015-02-07 20:34:20.257148"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.6ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "Physical Test"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Rand Wolf"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 75], ["assignment_id", 4], ["student_id", 3], ["created_at", "2015-02-07 20:34:20.262844"], ["updated_at", "2015-02-07 20:34:20.262844"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.6ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Test 4"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Rand Wolf"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 15], ["assignment_id", 3], ["student_id", 3], ["created_at", "2015-02-07 20:34:20.273111"], ["updated_at", "2015-02-07 20:34:20.273111"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:34:29 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTeacher Load (0.2ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mStudent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1[0m  [["teacher_id", 1]]
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?  [["teacher_id", 1]]
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?[0m  [["student_id", 3]]
+  [1m[35mGrade Load (0.1ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 4]]
+  Rendered teachers/show.html.erb within layouts/application (44.1ms)
+Completed 200 OK in 264ms (Views: 230.5ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:34:30 -0500
+  [1m[36m (12.4ms)[0m  [1mCREATE TABLE "assignments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "subject_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (1.4ms)[0m  [1mCREATE  INDEX "index_assignments_on_subject_id" ON "assignments" ("subject_id")[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "grades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "score" integer, "assignment_id" integer, "student_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (3.2ms)[0m  [1mCREATE  INDEX "index_grades_on_assignment_id" ON "grades" ("assignment_id")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_grades_on_assignment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_grades_on_assignment_id' AND type='index'
+
+  [1m[36m (1.2ms)[0m  [1mCREATE  INDEX "index_grades_on_student_id" ON "grades" ("student_id")[0m
+  [1m[35m (1.7ms)[0m  CREATE TABLE "parents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (2.0ms)[0m  [1mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "parent_id" integer, "teacher_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.0ms)[0m  CREATE  INDEX "index_students_on_parent_id" ON "students" ("parent_id")
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_students_on_parent_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_students_on_parent_id' AND type='index'
+[0m
+  [1m[35m (0.9ms)[0m  CREATE  INDEX "index_students_on_teacher_id" ON "students" ("teacher_id")
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE TABLE "teachers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.2ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150207165751')
+  [1m[36m (0.9ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150207165405')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150207165428')
+  [1m[36m (0.7ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150207165551')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150207165613')
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150207165701')[0m
+  [1m[35m (0.9ms)[0m  CREATE TABLE "assignments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "subject_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.6ms)[0m  CREATE  INDEX "index_assignments_on_subject_id" ON "assignments" ("subject_id")
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "grades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "score" integer, "assignment_id" integer, "student_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.8ms)[0m  CREATE  INDEX "index_grades_on_assignment_id" ON "grades" ("assignment_id")
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_grades_on_assignment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_grades_on_assignment_id' AND type='index'
+[0m
+  [1m[35m (1.1ms)[0m  CREATE  INDEX "index_grades_on_student_id" ON "grades" ("student_id")
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "parents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (1.3ms)[0m  CREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "parent_id" integer, "teacher_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.2ms)[0m  [1mCREATE  INDEX "index_students_on_parent_id" ON "students" ("parent_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_students_on_parent_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_students_on_parent_id' AND type='index'
+
+  [1m[36m (1.1ms)[0m  [1mCREATE  INDEX "index_students_on_teacher_id" ON "students" ("teacher_id")[0m
+  [1m[35m (1.5ms)[0m  CREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "teachers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150207165751')[0m
+  [1m[35m (0.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150207165405')
+  [1m[36m (0.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150207165428')[0m
+  [1m[35m (0.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150207165551')
+  [1m[36m (1.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20150207165613')[0m
+  [1m[35m (1.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20150207165701')
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "teachers" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Tyrion Lanisster"], ["email", "gold@rock.com"], ["password_digest", "$2a$10$6yRZ0A/7s7A9Szm7jilXn.4FZj7TIOC58ZnqypqJCBVZ3muMEqEQe"], ["created_at", "2015-02-07 20:35:16.783377"], ["updated_at", "2015-02-07 20:35:16.783377"]]
+  [1m[35m (8.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "teachers" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Bob Barker"], ["email", "price@right.com"], ["password_digest", "$2a$10$idigqYR6B9d95im33KOpHe0OSB227muhkb9D.wCexZnZXhp9EZug."], ["created_at", "2015-02-07 20:35:16.869641"], ["updated_at", "2015-02-07 20:35:16.869641"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "teachers" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rob Johnston"], ["email", "robby@ecu.edu"], ["password_digest", "$2a$10$weD2PYNrhPMWFVB18Si7J.ezsaa1AaXdFEV5H29AYU0MoA2/1pEUO"], ["created_at", "2015-02-07 20:35:16.948653"], ["updated_at", "2015-02-07 20:35:16.948653"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "parents" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Carl Carlson"], ["email", "springfield@somestate.com"], ["password_digest", "$2a$10$2fBvGdCrvDY3ukXfv13Nyucu39kSmpb7DWIOo6Gis1oV2GBOWp5eK"], ["created_at", "2015-02-07 20:35:17.083663"], ["updated_at", "2015-02-07 20:35:17.083663"]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "parents" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Ronda Bazemore"], ["email", "ron@howard.com"], ["password_digest", "$2a$10$XIoQFz541m7yg3ote5M/t.1KizRsSz5CGPaUQY7/G67FZtVs58vOG"], ["created_at", "2015-02-07 20:35:17.171120"], ["updated_at", "2015-02-07 20:35:17.171120"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "parents" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Perrin Wolf"], ["email", "hammer@wot.com"], ["password_digest", "$2a$10$BUhzPK7tNi/5CHACPPvBU.QX4t4Jdk.L9.PeDyWPcvktayb2Ai/jC"], ["created_at", "2015-02-07 20:35:17.245708"], ["updated_at", "2015-02-07 20:35:17.245708"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mParent Load (0.2ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."name" = ? LIMIT 1  [["name", "Carl Carlson"]]
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."name" = ? LIMIT 1[0m  [["name", "Bob Barker"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "students" ("name", "email", "password_digest", "parent_id", "teacher_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lakeshia Carlson"], ["email", "lkc@nyu.edu"], ["password_digest", "$2a$10$kIvsr4/zsLjLqwGi39q63uoem3LwWQNnEWC.whyjllI5ciMTb7Qiu"], ["parent_id", 1], ["teacher_id", 2], ["created_at", "2015-02-07 20:35:17.338070"], ["updated_at", "2015-02-07 20:35:17.338070"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mParent Load (0.1ms)[0m  [1mSELECT  "parents".* FROM "parents" WHERE "parents"."name" = ? LIMIT 1[0m  [["name", "Ronda Bazemore"]]
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."name" = ? LIMIT 1  [["name", "Rob Johnston"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("name", "email", "password_digest", "parent_id", "teacher_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Tristan Bazemore"], ["email", "tristan@nyu.edu"], ["password_digest", "$2a$10$XyFlUHZOX.vuokMPDKC.ZuVXEJwVWUesssyC1XThX7bjLQWA1rpuC"], ["parent_id", 2], ["teacher_id", 3], ["created_at", "2015-02-07 20:35:17.420800"], ["updated_at", "2015-02-07 20:35:17.420800"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mParent Load (0.1ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."name" = ? LIMIT 1  [["name", "Perrin Wolf"]]
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."name" = ? LIMIT 1[0m  [["name", "Tyrion Lanisster"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("name", "email", "password_digest", "parent_id", "teacher_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rand Wolf"], ["email", "fire@wot.com"], ["password_digest", "$2a$10$mnT.Tz9G2prcEZyLZJnKn.O8onmiWYqZd0LYR7LxrpEj7YTifmS4q"], ["parent_id", 3], ["teacher_id", 1], ["created_at", "2015-02-07 20:35:17.498336"], ["updated_at", "2015-02-07 20:35:17.498336"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mParent Load (0.1ms)[0m  [1mSELECT  "parents".* FROM "parents" WHERE "parents"."name" = ? LIMIT 1[0m  [["name", "Perrin Wolf"]]
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."name" = ? LIMIT 1  [["name", "Tyrion Lanisster"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("name", "email", "password_digest", "parent_id", "teacher_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Mat Wolf"], ["email", "gambke@wot.com"], ["password_digest", "$2a$10$nfDwC/igL5auAEuFzLubUeuQdUDa2sSJ406s1oiIMINjfp0qZLtPW"], ["parent_id", 3], ["teacher_id", 1], ["created_at", "2015-02-07 20:35:17.575935"], ["updated_at", "2015-02-07 20:35:17.575935"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Math"], ["created_at", "2015-02-07 20:35:17.581858"], ["updated_at", "2015-02-07 20:35:17.581858"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Biology"], ["created_at", "2015-02-07 20:35:17.584453"], ["updated_at", "2015-02-07 20:35:17.584453"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Computer Science"], ["created_at", "2015-02-07 20:35:17.587273"], ["updated_at", "2015-02-07 20:35:17.587273"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "PE"], ["created_at", "2015-02-07 20:35:17.590173"], ["updated_at", "2015-02-07 20:35:17.590173"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "History"], ["created_at", "2015-02-07 20:35:17.594058"], ["updated_at", "2015-02-07 20:35:17.594058"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "British Lit"], ["created_at", "2015-02-07 20:35:17.597132"], ["updated_at", "2015-02-07 20:35:17.597132"]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "PE"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test #1"], ["subject_id", 4], ["created_at", "2015-02-07 20:35:17.612592"], ["updated_at", "2015-02-07 20:35:17.612592"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.3ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "History"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "HW Assignment #3"], ["subject_id", 5], ["created_at", "2015-02-07 20:35:17.619190"], ["updated_at", "2015-02-07 20:35:17.619190"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "Computer Science"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test 4"], ["subject_id", 3], ["created_at", "2015-02-07 20:35:17.624999"], ["updated_at", "2015-02-07 20:35:17.624999"]]
+  [1m[36m (3.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.3ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "PE"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.5ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Physical Test"], ["subject_id", 4], ["created_at", "2015-02-07 20:35:17.632366"], ["updated_at", "2015-02-07 20:35:17.632366"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "British Lit"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "HW Assignment #4"], ["subject_id", 6], ["created_at", "2015-02-07 20:35:17.640982"], ["updated_at", "2015-02-07 20:35:17.640982"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "Biology"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Final Exam"], ["subject_id", 2], ["created_at", "2015-02-07 20:35:17.643365"], ["updated_at", "2015-02-07 20:35:17.643365"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "Math"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Make up Quiz # 2"], ["subject_id", 1], ["created_at", "2015-02-07 20:35:17.647765"], ["updated_at", "2015-02-07 20:35:17.647765"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.8ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "HW Assignment #4"]]
+  [1m[36mStudent Load (0.2ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Mat Wolf"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 75], ["assignment_id", 5], ["student_id", 4], ["created_at", "2015-02-07 20:35:17.673486"], ["updated_at", "2015-02-07 20:35:17.673486"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Physical Test"]]
+  [1m[35mStudent Load (0.6ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Lakeshia Carlson"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 88], ["assignment_id", 4], ["student_id", 1], ["created_at", "2015-02-07 20:35:17.680558"], ["updated_at", "2015-02-07 20:35:17.680558"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "HW Assignment #4"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Lakeshia Carlson"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 92], ["assignment_id", 5], ["student_id", 1], ["created_at", "2015-02-07 20:35:17.685608"], ["updated_at", "2015-02-07 20:35:17.685608"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Make up Quiz # 2"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Tristan Bazemore"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 55], ["assignment_id", 7], ["student_id", 2], ["created_at", "2015-02-07 20:35:17.691802"], ["updated_at", "2015-02-07 20:35:17.691802"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "Test #1"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Lakeshia Carlson"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 77], ["assignment_id", 1], ["student_id", 1], ["created_at", "2015-02-07 20:35:17.694977"], ["updated_at", "2015-02-07 20:35:17.694977"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Physical Test"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Lakeshia Carlson"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 82], ["assignment_id", 4], ["student_id", 1], ["created_at", "2015-02-07 20:35:17.697973"], ["updated_at", "2015-02-07 20:35:17.697973"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "HW Assignment #4"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Mat Wolf"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 56], ["assignment_id", 5], ["student_id", 4], ["created_at", "2015-02-07 20:35:17.701481"], ["updated_at", "2015-02-07 20:35:17.701481"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Test #1"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Lakeshia Carlson"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 100], ["assignment_id", 1], ["student_id", 1], ["created_at", "2015-02-07 20:35:17.705100"], ["updated_at", "2015-02-07 20:35:17.705100"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "Make up Quiz # 2"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Tristan Bazemore"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 98], ["assignment_id", 7], ["student_id", 2], ["created_at", "2015-02-07 20:35:17.708331"], ["updated_at", "2015-02-07 20:35:17.708331"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Final Exam"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Lakeshia Carlson"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 44], ["assignment_id", 6], ["student_id", 1], ["created_at", "2015-02-07 20:35:17.711516"], ["updated_at", "2015-02-07 20:35:17.711516"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "HW Assignment #4"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Tristan Bazemore"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 55], ["assignment_id", 5], ["student_id", 2], ["created_at", "2015-02-07 20:35:17.714616"], ["updated_at", "2015-02-07 20:35:17.714616"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Final Exam"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Rand Wolf"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 66], ["assignment_id", 6], ["student_id", 3], ["created_at", "2015-02-07 20:35:17.717827"], ["updated_at", "2015-02-07 20:35:17.717827"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "Physical Test"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Rand Wolf"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 75], ["assignment_id", 4], ["student_id", 3], ["created_at", "2015-02-07 20:35:17.720909"], ["updated_at", "2015-02-07 20:35:17.720909"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Test 4"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Rand Wolf"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 15], ["assignment_id", 3], ["student_id", 3], ["created_at", "2015-02-07 20:35:17.724094"], ["updated_at", "2015-02-07 20:35:17.724094"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:35:24 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTeacher Load (0.2ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mStudent Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1[0m  [["teacher_id", 1]]
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?  [["teacher_id", 1]]
+  [1m[36mGrade Load (0.2ms)[0m  [1mSELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?[0m  [["student_id", 3]]
+  [1m[35mGrade Load (0.1ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 4]]
+  Rendered teachers/show.html.erb within layouts/application (38.7ms)
+Completed 200 OK in 244ms (Views: 216.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:35:24 -0500
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:36:13 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?[0m  [["teacher_id", 1]]
+  [1m[35mGrade Load (0.1ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 3]]
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?[0m  [["student_id", 4]]
+  Rendered teachers/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 137ms (Views: 134.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:36:13 -0500
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:36:49 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTeacher Load (0.2ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mStudent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1[0m  [["teacher_id", 1]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?  [["teacher_id", 1]]
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?[0m  [["student_id", 3]]
+  [1m[35mGrade Load (0.1ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 4]]
+  Rendered teachers/show.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 108ms (Views: 106.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:36:49 -0500
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:37:12 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?[0m  [["teacher_id", 1]]
+  [1m[35mGrade Load (0.1ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 3]]
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?[0m  [["student_id", 4]]
+  Rendered teachers/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 97ms (Views: 95.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:37:12 -0500
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:37:24 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mStudent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1[0m  [["teacher_id", 1]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?  [["teacher_id", 1]]
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?[0m  [["student_id", 3]]
+  [1m[35mGrade Load (0.1ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 4]]
+  Rendered teachers/show.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 107ms (Views: 105.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:37:24 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:37:24 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:37:24 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:37:25 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:37:25 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:37:25 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:37:25 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:37:25 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:37:25 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:37:25 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:37:25 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:37:25 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:37:25 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:37:25 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:37:25 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:37:25 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:37:25 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:37:25 -0500
+
+
+Started GET "/teachers/1" for ::1 at 2015-02-07 15:38:42 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 1]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?[0m  [["teacher_id", 1]]
+  [1m[35mGrade Load (0.1ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 3]]
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?[0m  [["student_id", 4]]
+  Rendered teachers/show.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 121ms (Views: 120.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:38:42 -0500
+
+
+Started GET "/teachers" for ::1 at 2015-02-07 15:38:50 -0500
+Processing by TeachersController#index as HTML
+  [1m[35mTeacher Load (0.2ms)[0m  SELECT "teachers".* FROM "teachers"
+  Rendered teachers/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 106ms (Views: 105.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/teachers" for ::1 at 2015-02-07 15:39:10 -0500
+Processing by TeachersController#index as HTML
+  [1m[36mTeacher Load (0.2ms)[0m  [1mSELECT "teachers".* FROM "teachers"[0m
+  Rendered teachers/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 108ms (Views: 107.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:39:11 -0500
+
+
+Started GET "/teachers/3" for ::1 at 2015-02-07 15:39:36 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mStudent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1[0m  [["teacher_id", 3]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?  [["teacher_id", 3]]
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?[0m  [["student_id", 2]]
+  Rendered teachers/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 102ms (Views: 101.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teachers" for ::1 at 2015-02-07 15:39:39 -0500
+Processing by TeachersController#index as HTML
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT "teachers".* FROM "teachers"
+  Rendered teachers/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 101ms (Views: 100.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/teachers/2" for ::1 at 2015-02-07 15:40:41 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 2]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?[0m  [["teacher_id", 2]]
+  [1m[35mGrade Load (0.1ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 1]]
+  Rendered teachers/show.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 111ms (Views: 109.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/teachers/2" for ::1 at 2015-02-07 15:44:29 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mStudent Exists (0.2ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 2]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?[0m  [["teacher_id", 2]]
+  [1m[35mGrade Load (0.2ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 1]]
+  [1m[36mAssignment Load (0.2ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered teachers/show.html.erb within layouts/application (23.1ms)
+Completed 200 OK in 146ms (Views: 143.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:44:29 -0500
+
+
+Started GET "/teachers/2" for ::1 at 2015-02-07 15:44:49 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 2]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?[0m  [["teacher_id", 2]]
+  [1m[35mGrade Load (0.1ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 1]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered teachers/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 110ms (Views: 108.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:44:49 -0500
+
+
+Started GET "/teachers/2" for ::1 at 2015-02-07 15:44:58 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTeacher Load (0.2ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 2]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?[0m  [["teacher_id", 2]]
+  [1m[35mGrade Load (0.1ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 1]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered teachers/show.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 113ms (Views: 111.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:44:58 -0500
+
+
+Started GET "/teachers/2" for ::1 at 2015-02-07 15:45:21 -0500
+Processing by TeachersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mStudent Exists (0.1ms)[0m  SELECT  1 AS one FROM "students" WHERE "students"."teacher_id" = ? LIMIT 1  [["teacher_id", 2]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."teacher_id" = ?[0m  [["teacher_id", 2]]
+  [1m[35mGrade Load (0.1ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 1]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 5]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 6]]
+  Rendered teachers/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 115ms (Views: 113.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/scaffolds-866a6b7b454a7dbcc28315a1ecdd4b62.css?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/application-549c621bd80797a97e53bcca0939df20.css?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/application-d7367d99d8aff5298ef2b6a651d03487.js?body=1" for ::1 at 2015-02-07 15:45:22 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-07 15:45:22 -0500
