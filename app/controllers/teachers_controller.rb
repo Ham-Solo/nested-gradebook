@@ -1,12 +1,13 @@
 class TeachersController < ApplicationController
   before_action :set_teacher, only: [:show, :edit, :update, :destroy]
+  before_action :permission?, except: [:index]
 
   # GET /teachers
   # GET /teachers.json
   def index
     @teachers = Teacher.all
     @teacher = Teacher.new
-    
+
   end
 
   # GET /teachers/1

@@ -1,4 +1,7 @@
 class SessionsController < ApplicationController
+  before_action :redirect_path, except: [:destroy]
+  def new
+  end
 
   def create
     if request.post?
