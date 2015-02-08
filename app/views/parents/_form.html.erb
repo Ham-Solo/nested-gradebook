@@ -11,6 +11,7 @@
     </div>
   <% end %>
 
+
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
@@ -19,11 +20,40 @@
     <%= f.label :email %><br>
     <%= f.text_field :email %>
   </div>
-  <div class="field">
-    <%= f.label :password_digest %><br>
-    <%= f.text_field :password_digest %>
+  </div><div class="field">
+    <%= f.label :password %><br>
+    <%= f.text_field :password %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
+  </div><div class="field">
+    <%= f.label :password_confirmation %><br>
+    <%= f.text_field :password_confirmation %>
   </div>
+
+  <h1>New Student</h1>
+  <%= f.fields_for :students do |student| %>
+    <div class="student_fields">
+      <div class="field">
+        <%= student.label :name %><br>
+        <%= student.text_field :name %>
+      </div>
+      <div class="field">
+        <%= student.label :email %><br>
+        <%= student.text_field :email %>
+      </div><div class="field">
+        <%= student.label :password %><br>
+        <%= student.text_field :password %>
+      </div>
+      </div><div class="field">
+        <%= student.label :password_confirmation %><br>
+        <%= student.text_field :password_confirmation %>
+      </div>
+      <div class="field">
+        <%= student.label :teacher_id %><br>
+        <%= student.collection_select :teacher_id, Teacher.all, :id, :name %>
+      </div>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
 <% end %>

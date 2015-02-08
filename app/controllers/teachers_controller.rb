@@ -1,6 +1,6 @@
 class TeachersController < ApplicationController
   before_action :set_teacher, only: [:show, :edit, :update, :destroy]
-  before_action :permission?, except: [:index]
+  # before_action :permission?, except: [:index]
 
   # GET /teachers
   # GET /teachers.json
@@ -72,6 +72,6 @@ class TeachersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def teacher_params
-      params.require(:teacher).permit(:name, :email, :password_digest, student_attributes: [:id, :name])
+      params.require(:teacher).permit(:name, :email, :password, :password_confirmation, student_attributes: [:id, :name])
     end
 end
