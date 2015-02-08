@@ -8,6 +8,7 @@ class TeachersController < ApplicationController
     @teachers = Teacher.all
     @teacher = Teacher.new
     @parents = Parent.all
+    @student = Student.new
   end
 
   # GET /teachers/1

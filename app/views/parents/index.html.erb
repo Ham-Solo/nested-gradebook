@@ -1,15 +1,56 @@
 <h1><%= @parent.name %></h1>
-<ul>
-  <% if @parent.students.any? %>
-    <% @parent.students.each do |s| %>
-      <h2> <%= s.name %> </h2>
-        <p>Instructor:<strong> <%= s.teacher.name %></strong></p>
-        <% s.grades.each do |g| %>
-          <li><%= g.assignment.name %>:       <%= g.score %></li>
-        <% end %>
-    <% end %>
-  <% end %>
-</ul>
-<br>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Teacher</th>
+      <th>Assignment</th>
+      <th>Grade</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
 
+  <tbody>
+    <% @parent.students.each do |s| %>
+      <% s.grades.each do |g| %>
+      <tr>
+        <td><%= s.name %></td>
+        <td><%= s.email %></td>
+        <td><%= s.teacher.name %></td>
+        <td><%= g.assignment.name %></td>
+        <td><%= g.score %></td>
+      </tr>
+      <% end %>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+<h1>Change Password</h1>
+<%= form_for(@parent) do |f| %>
+  <% if @parent.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@parent.errors.count, "error") %> prohibited this parent from being saved:</h2>
+
+      <ul>
+      <% @parent.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation %><br>
+    <%= f.text_field :password_confirmation %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
 <br>

@@ -16,9 +16,8 @@
       <tr>
         <td><%= teacher.name %></td>
         <td><%= teacher.email %></td>
-        <td><%= link_to 'Show', teacher %></td>
         <td><%= link_to 'Edit', edit_teacher_path(teacher) %></td>
-        <td><%= link_to 'Destroy', teacher, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Delete', teacher, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,6 +29,8 @@
       <tr>
         <th>Name</th>
         <th>Email</th>
+        <th>Assignment</th>
+        <th>Grade</th>
         <th>Parent</th>
         <th colspan="3"></th>
       </tr>
@@ -37,17 +38,39 @@
 
     <tbody>
       <% current_user.students.each do |s| %>
-        <% @parents.where(id: s.parent_id) do |p| %>
+        <% s.grades.each do |g| %>
           <tr>
             <td><%= s.name %></td>
             <td><%= s.email %></td>
-            <td><%= p.name %></td>
-            <td><%= link_to 'Show', s %></td>
+            <td><%= g.assignment.name %></td>
+            <td><%= g.score %></td>
+            <td><%= s.parent.name%></td>
             <td><%= link_to 'Edit', edit_student_path(s) %></td>
-            <td><%= link_to 'Destroy', s, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to 'Delete', s, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
       <% end %>
     </tbody>
   </table>
+<h1>Parents</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th colspan="3"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% current_user.students.each do |s| %>
+            <tr>
+              <td><%= s.parent.name %></td>
+              <td><%= s.parent.email %></td>
+              <td><%= link_to 'Edit', edit_parent_path(s.parent) %></td>
+              <td><%= link_to 'Delete', s.parent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+        <% end %>
+      </tbody>
+    </table>
 <br>

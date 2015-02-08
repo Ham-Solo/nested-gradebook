@@ -23965,3 +23965,517 @@ Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::
 
 
 Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-07 22:40:00 -0500
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateTeachers (20150207165405)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "teachers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150207165405"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateParents (20150207165428)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "parents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150207165428"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateStudents (20150207165551)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "parent_id" integer, "teacher_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_students_on_parent_id" ON "students" ("parent_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_students_on_parent_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_students_on_parent_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_students_on_teacher_id" ON "students" ("teacher_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150207165551"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSubjects (20150207165613)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150207165613"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+Migrating to CreateAssignments (20150207165701)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "assignments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "subject_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_assignments_on_subject_id" ON "assignments" ("subject_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150207165701"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateGrades (20150207165751)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "grades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "score" integer, "assignment_id" integer, "student_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_grades_on_assignment_id" ON "grades" ("assignment_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_grades_on_assignment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_grades_on_assignment_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_grades_on_student_id" ON "grades" ("student_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150207165751"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_assignments_on_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_assignments_on_subject_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_grades_on_student_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_grades_on_student_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_grades_on_assignment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_grades_on_assignment_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_students_on_teacher_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_students_on_teacher_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_students_on_parent_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_students_on_parent_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTeacher Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "teachers" WHERE "teachers"."email" = 'gold@rock.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "teachers" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Tyrion Lanisster"], ["email", "gold@rock.com"], ["password_digest", "$2a$10$e0BBDF5PemA5hAcmta630OG7cIYaJH731/76ybj6E2El7jzgE/ePG"], ["created_at", "2015-02-08 04:19:22.362157"], ["updated_at", "2015-02-08 04:19:22.362157"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTeacher Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "teachers" WHERE "teachers"."email" = 'price@right.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "teachers" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Bob Barker"], ["email", "price@right.com"], ["password_digest", "$2a$10$DDi9QW4QzoT.6kbBEHg1nukrFddmm/u2aQ.AZu9LPG0LMvYhjMm.6"], ["created_at", "2015-02-08 04:19:22.443378"], ["updated_at", "2015-02-08 04:19:22.443378"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTeacher Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "teachers" WHERE "teachers"."email" = 'robby@ecu.edu' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "teachers" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Rob Johnston"], ["email", "robby@ecu.edu"], ["password_digest", "$2a$10$IVZo5IdmkqeeQXa3IgL51uilsrwyeZ0GLrXWQ3LWkoI1c8h0U2JGa"], ["created_at", "2015-02-08 04:19:22.526288"], ["updated_at", "2015-02-08 04:19:22.526288"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mParent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "parents" WHERE "parents"."email" = 'springfield@somestate.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "parents" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Carl Carlson"], ["email", "springfield@somestate.com"], ["password_digest", "$2a$10$2fijOz6dSonUAPq72hPbY.9Y3qbv3yeVKic2NJnPgCAAO2utSCLvy"], ["created_at", "2015-02-08 04:19:22.653631"], ["updated_at", "2015-02-08 04:19:22.653631"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mParent Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "parents" WHERE "parents"."email" = 'ron@howard.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "parents" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Ronda Bazemore"], ["email", "ron@howard.com"], ["password_digest", "$2a$10$olFUX0f/5EsAsv4Ga9Ay0.RlzNzSM6vv89zxWL1TwLt2UCI2pH9Ya"], ["created_at", "2015-02-08 04:19:22.730345"], ["updated_at", "2015-02-08 04:19:22.730345"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mParent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "parents" WHERE "parents"."email" = 'hammer@wot.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "parents" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Perrin Wolf"], ["email", "hammer@wot.com"], ["password_digest", "$2a$10$jLgaOjPhNCbkaEOmx/VHg.OkeIxhQHsm1IbCRoXc.700ndmOHGFcC"], ["created_at", "2015-02-08 04:19:22.807451"], ["updated_at", "2015-02-08 04:19:22.807451"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mParent Load (0.2ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."name" = ? LIMIT 1  [["name", "Carl Carlson"]]
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."name" = ? LIMIT 1[0m  [["name", "Bob Barker"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("name", "email", "password_digest", "parent_id", "teacher_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lakeshia Carlson"], ["email", "lkc@nyu.edu"], ["password_digest", "$2a$10$cVJRWW7oEEUQSOO/6KO7be6ZsLPc1Rw6ZMj8paSsMYz16NIsfOehi"], ["parent_id", 1], ["teacher_id", 2], ["created_at", "2015-02-08 04:19:22.890278"], ["updated_at", "2015-02-08 04:19:22.890278"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mParent Load (0.1ms)[0m  [1mSELECT  "parents".* FROM "parents" WHERE "parents"."name" = ? LIMIT 1[0m  [["name", "Ronda Bazemore"]]
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."name" = ? LIMIT 1  [["name", "Rob Johnston"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "students" ("name", "email", "password_digest", "parent_id", "teacher_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Tristan Bazemore"], ["email", "tristan@nyu.edu"], ["password_digest", "$2a$10$puBYCV4LQk2HrF7cCWCsvu9D9.sf6428HGfSrHSQIpJ7./hajd9ZW"], ["parent_id", 2], ["teacher_id", 3], ["created_at", "2015-02-08 04:19:22.968517"], ["updated_at", "2015-02-08 04:19:22.968517"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mParent Load (0.1ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."name" = ? LIMIT 1  [["name", "Perrin Wolf"]]
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."name" = ? LIMIT 1[0m  [["name", "Tyrion Lanisster"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("name", "email", "password_digest", "parent_id", "teacher_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rand Wolf"], ["email", "fire@wot.com"], ["password_digest", "$2a$10$AGCSiAJvubT9oZ7FvNUW5O1/1fDGBYSZo70nsHBqAYO6K0EK3A0vC"], ["parent_id", 3], ["teacher_id", 1], ["created_at", "2015-02-08 04:19:23.054656"], ["updated_at", "2015-02-08 04:19:23.054656"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mParent Load (0.1ms)[0m  [1mSELECT  "parents".* FROM "parents" WHERE "parents"."name" = ? LIMIT 1[0m  [["name", "Perrin Wolf"]]
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."name" = ? LIMIT 1  [["name", "Tyrion Lanisster"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("name", "email", "password_digest", "parent_id", "teacher_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Mat Wolf"], ["email", "gambke@wot.com"], ["password_digest", "$2a$10$S9DmzaddpjRWpfxfoE4o5.ncPY9AMyCROkdiW9s1Ah1oI2En2kr1."], ["parent_id", 3], ["teacher_id", 1], ["created_at", "2015-02-08 04:19:23.137313"], ["updated_at", "2015-02-08 04:19:23.137313"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Math"], ["created_at", "2015-02-08 04:19:23.142930"], ["updated_at", "2015-02-08 04:19:23.142930"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Biology"], ["created_at", "2015-02-08 04:19:23.144920"], ["updated_at", "2015-02-08 04:19:23.144920"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Computer Science"], ["created_at", "2015-02-08 04:19:23.147051"], ["updated_at", "2015-02-08 04:19:23.147051"]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "PE"], ["created_at", "2015-02-08 04:19:23.151586"], ["updated_at", "2015-02-08 04:19:23.151586"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "History"], ["created_at", "2015-02-08 04:19:23.155725"], ["updated_at", "2015-02-08 04:19:23.155725"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "British Lit"], ["created_at", "2015-02-08 04:19:23.159371"], ["updated_at", "2015-02-08 04:19:23.159371"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "PE"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test #1"], ["subject_id", 4], ["created_at", "2015-02-08 04:19:23.170713"], ["updated_at", "2015-02-08 04:19:23.170713"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "History"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "HW Assignment #3"], ["subject_id", 5], ["created_at", "2015-02-08 04:19:23.174269"], ["updated_at", "2015-02-08 04:19:23.174269"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "Computer Science"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test 4"], ["subject_id", 3], ["created_at", "2015-02-08 04:19:23.177281"], ["updated_at", "2015-02-08 04:19:23.177281"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "PE"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Physical Test"], ["subject_id", 4], ["created_at", "2015-02-08 04:19:23.180605"], ["updated_at", "2015-02-08 04:19:23.180605"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "British Lit"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "HW Assignment #4"], ["subject_id", 6], ["created_at", "2015-02-08 04:19:23.183374"], ["updated_at", "2015-02-08 04:19:23.183374"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "Biology"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Final Exam"], ["subject_id", 2], ["created_at", "2015-02-08 04:19:23.186050"], ["updated_at", "2015-02-08 04:19:23.186050"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "Math"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Make up Quiz # 2"], ["subject_id", 1], ["created_at", "2015-02-08 04:19:23.188698"], ["updated_at", "2015-02-08 04:19:23.188698"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "HW Assignment #4"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Mat Wolf"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 75], ["assignment_id", 5], ["student_id", 4], ["created_at", "2015-02-08 04:19:23.198088"], ["updated_at", "2015-02-08 04:19:23.198088"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Physical Test"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Lakeshia Carlson"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 88], ["assignment_id", 4], ["student_id", 1], ["created_at", "2015-02-08 04:19:23.201291"], ["updated_at", "2015-02-08 04:19:23.201291"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "HW Assignment #4"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Lakeshia Carlson"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 92], ["assignment_id", 5], ["student_id", 1], ["created_at", "2015-02-08 04:19:23.204376"], ["updated_at", "2015-02-08 04:19:23.204376"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Make up Quiz # 2"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Tristan Bazemore"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 55], ["assignment_id", 7], ["student_id", 2], ["created_at", "2015-02-08 04:19:23.207686"], ["updated_at", "2015-02-08 04:19:23.207686"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "Test #1"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Lakeshia Carlson"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 77], ["assignment_id", 1], ["student_id", 1], ["created_at", "2015-02-08 04:19:23.210634"], ["updated_at", "2015-02-08 04:19:23.210634"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Physical Test"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Lakeshia Carlson"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 82], ["assignment_id", 4], ["student_id", 1], ["created_at", "2015-02-08 04:19:23.213442"], ["updated_at", "2015-02-08 04:19:23.213442"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "HW Assignment #4"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Mat Wolf"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 56], ["assignment_id", 5], ["student_id", 4], ["created_at", "2015-02-08 04:19:23.216379"], ["updated_at", "2015-02-08 04:19:23.216379"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Test #1"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Lakeshia Carlson"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 100], ["assignment_id", 1], ["student_id", 1], ["created_at", "2015-02-08 04:19:23.219705"], ["updated_at", "2015-02-08 04:19:23.219705"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "Make up Quiz # 2"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Tristan Bazemore"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 98], ["assignment_id", 7], ["student_id", 2], ["created_at", "2015-02-08 04:19:23.222909"], ["updated_at", "2015-02-08 04:19:23.222909"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Final Exam"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Lakeshia Carlson"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 44], ["assignment_id", 6], ["student_id", 1], ["created_at", "2015-02-08 04:19:23.225884"], ["updated_at", "2015-02-08 04:19:23.225884"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "HW Assignment #4"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Tristan Bazemore"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 55], ["assignment_id", 5], ["student_id", 2], ["created_at", "2015-02-08 04:19:23.228861"], ["updated_at", "2015-02-08 04:19:23.228861"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Final Exam"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Rand Wolf"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 66], ["assignment_id", 6], ["student_id", 3], ["created_at", "2015-02-08 04:19:23.232487"], ["updated_at", "2015-02-08 04:19:23.232487"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "Physical Test"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Rand Wolf"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 75], ["assignment_id", 4], ["student_id", 3], ["created_at", "2015-02-08 04:19:23.235629"], ["updated_at", "2015-02-08 04:19:23.235629"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Test 4"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Rand Wolf"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 15], ["assignment_id", 3], ["student_id", 3], ["created_at", "2015-02-08 04:19:23.238501"], ["updated_at", "2015-02-08 04:19:23.238501"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateTeachers (20150207165405)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "teachers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150207165405"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Migrating to CreateParents (20150207165428)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "parents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150207165428"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateStudents (20150207165551)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "password_digest" varchar, "parent_id" integer, "teacher_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_students_on_parent_id" ON "students" ("parent_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_students_on_parent_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_students_on_parent_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_students_on_teacher_id" ON "students" ("teacher_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150207165551"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateSubjects (20150207165613)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "subjects" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150207165613"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateAssignments (20150207165701)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "assignments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "subject_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.3ms)[0m  CREATE  INDEX "index_assignments_on_subject_id" ON "assignments" ("subject_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150207165701"]]
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateGrades (20150207165751)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "grades" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "score" integer, "assignment_id" integer, "student_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_grades_on_assignment_id" ON "grades" ("assignment_id")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_grades_on_assignment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_grades_on_assignment_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_grades_on_student_id" ON "grades" ("student_id")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150207165751"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_assignments_on_subject_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_assignments_on_subject_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_grades_on_student_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_grades_on_student_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_grades_on_assignment_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_grades_on_assignment_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_students_on_teacher_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_students_on_teacher_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_students_on_parent_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_students_on_parent_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTeacher Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "teachers" WHERE "teachers"."email" = 'gold@rock.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "teachers" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Tyrion Lanisster"], ["email", "gold@rock.com"], ["password_digest", "$2a$10$H9BUVSaR9cWKQehJqhhSjurPsQtZG37WHUpxnhPn8TRRTjFWrmQRS"], ["created_at", "2015-02-08 16:33:09.951708"], ["updated_at", "2015-02-08 16:33:09.951708"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTeacher Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "teachers" WHERE "teachers"."email" = 'price@right.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "teachers" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Bob Barker"], ["email", "price@right.com"], ["password_digest", "$2a$10$mVpeDLyBD8N4v157d5pFUOiHtA/0/GBw3JhotTGC8.ApzihPQnEL2"], ["created_at", "2015-02-08 16:33:10.030301"], ["updated_at", "2015-02-08 16:33:10.030301"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mTeacher Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "teachers" WHERE "teachers"."email" = 'robby@ecu.edu' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "teachers" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Rob Johnston"], ["email", "robby@ecu.edu"], ["password_digest", "$2a$10$zl6Hg5IbNcRLYgG8Magxx.6xANJvR7ee0r4N5GLRdFEqn/F7bohc."], ["created_at", "2015-02-08 16:33:10.109257"], ["updated_at", "2015-02-08 16:33:10.109257"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mParent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "parents" WHERE "parents"."email" = 'springfield@somestate.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "parents" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Carl Carlson"], ["email", "springfield@somestate.com"], ["password_digest", "$2a$10$6dNDkVMR1qhVV2VQOA6eXuQIeY5tLG4RoUvp3fC4q1Rth5pH2Z4Xq"], ["created_at", "2015-02-08 16:33:10.251440"], ["updated_at", "2015-02-08 16:33:10.251440"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mParent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "parents" WHERE "parents"."email" = 'ron@howard.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "parents" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Ronda Bazemore"], ["email", "ron@howard.com"], ["password_digest", "$2a$10$2BHbWaLQMdlb3dshaoyIIe2bOi9FBNL/wax9omsG7eKnaipsTYMCu"], ["created_at", "2015-02-08 16:33:10.333981"], ["updated_at", "2015-02-08 16:33:10.333981"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mParent Exists (0.1ms)[0m  [1mSELECT  1 AS one FROM "parents" WHERE "parents"."email" = 'hammer@wot.com' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "parents" ("name", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["name", "Perrin Wolf"], ["email", "hammer@wot.com"], ["password_digest", "$2a$10$yvRW2hf2Dnvb.e77gdEL.O0R7Ao7CHj.cHp5ld2kGo2gIMsZZoSjO"], ["created_at", "2015-02-08 16:33:10.414675"], ["updated_at", "2015-02-08 16:33:10.414675"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mParent Load (0.2ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."name" = ? LIMIT 1  [["name", "Carl Carlson"]]
+  [1m[36mTeacher Load (0.2ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."name" = ? LIMIT 1[0m  [["name", "Bob Barker"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "students" ("name", "email", "password_digest", "parent_id", "teacher_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Lakeshia Carlson"], ["email", "lkc@nyu.edu"], ["password_digest", "$2a$10$DvY/N4F.Z4qffw/fh2Sp2uxTOZj2tszWLZNU/yR5kJNkPyjwhZ.eS"], ["parent_id", 1], ["teacher_id", 2], ["created_at", "2015-02-08 16:33:10.496484"], ["updated_at", "2015-02-08 16:33:10.496484"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mParent Load (0.1ms)[0m  [1mSELECT  "parents".* FROM "parents" WHERE "parents"."name" = ? LIMIT 1[0m  [["name", "Ronda Bazemore"]]
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."name" = ? LIMIT 1  [["name", "Rob Johnston"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("name", "email", "password_digest", "parent_id", "teacher_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Tristan Bazemore"], ["email", "tristan@nyu.edu"], ["password_digest", "$2a$10$8xEDNdqXHlG9BHMcMHN1beC.cOtRYXGaeHKM9KPCkr.cPBlEi7vpS"], ["parent_id", 2], ["teacher_id", 3], ["created_at", "2015-02-08 16:33:10.575841"], ["updated_at", "2015-02-08 16:33:10.575841"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mParent Load (0.1ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."name" = ? LIMIT 1  [["name", "Perrin Wolf"]]
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."name" = ? LIMIT 1[0m  [["name", "Tyrion Lanisster"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "students" ("name", "email", "password_digest", "parent_id", "teacher_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Rand Wolf"], ["email", "fire@wot.com"], ["password_digest", "$2a$10$9/vZi911kxSlpFLrGxb21./6UWKlByrMB9F5KP2r2GvhPTIOJtSVS"], ["parent_id", 3], ["teacher_id", 1], ["created_at", "2015-02-08 16:33:10.648352"], ["updated_at", "2015-02-08 16:33:10.648352"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mParent Load (0.1ms)[0m  [1mSELECT  "parents".* FROM "parents" WHERE "parents"."name" = ? LIMIT 1[0m  [["name", "Perrin Wolf"]]
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."name" = ? LIMIT 1  [["name", "Tyrion Lanisster"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "students" ("name", "email", "password_digest", "parent_id", "teacher_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["name", "Mat Wolf"], ["email", "gambke@wot.com"], ["password_digest", "$2a$10$FmIs8eoBSifzBZp0nwVaqe73RpEvU8SgpigH14KMW0iVAMaFAZByq"], ["parent_id", 3], ["teacher_id", 1], ["created_at", "2015-02-08 16:33:10.729559"], ["updated_at", "2015-02-08 16:33:10.729559"]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Math"], ["created_at", "2015-02-08 16:33:10.738808"], ["updated_at", "2015-02-08 16:33:10.738808"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "Biology"], ["created_at", "2015-02-08 16:33:10.740840"], ["updated_at", "2015-02-08 16:33:10.740840"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "Computer Science"], ["created_at", "2015-02-08 16:33:10.742903"], ["updated_at", "2015-02-08 16:33:10.742903"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "PE"], ["created_at", "2015-02-08 16:33:10.744893"], ["updated_at", "2015-02-08 16:33:10.744893"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["name", "History"], ["created_at", "2015-02-08 16:33:10.746725"], ["updated_at", "2015-02-08 16:33:10.746725"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "subjects" ("name", "created_at", "updated_at") VALUES (?, ?, ?)  [["name", "British Lit"], ["created_at", "2015-02-08 16:33:10.748756"], ["updated_at", "2015-02-08 16:33:10.748756"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "PE"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test #1"], ["subject_id", 4], ["created_at", "2015-02-08 16:33:10.756226"], ["updated_at", "2015-02-08 16:33:10.756226"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "History"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "HW Assignment #3"], ["subject_id", 5], ["created_at", "2015-02-08 16:33:10.759180"], ["updated_at", "2015-02-08 16:33:10.759180"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "Computer Science"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Test 4"], ["subject_id", 3], ["created_at", "2015-02-08 16:33:10.761721"], ["updated_at", "2015-02-08 16:33:10.761721"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "PE"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Physical Test"], ["subject_id", 4], ["created_at", "2015-02-08 16:33:10.764789"], ["updated_at", "2015-02-08 16:33:10.764789"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "British Lit"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "HW Assignment #4"], ["subject_id", 6], ["created_at", "2015-02-08 16:33:10.767233"], ["updated_at", "2015-02-08 16:33:10.767233"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "Biology"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Final Exam"], ["subject_id", 2], ["created_at", "2015-02-08 16:33:10.769876"], ["updated_at", "2015-02-08 16:33:10.769876"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mSubject Load (0.1ms)[0m  SELECT  "subjects".* FROM "subjects" WHERE "subjects"."name" = ? LIMIT 1  [["name", "Math"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "assignments" ("name", "subject_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Make up Quiz # 2"], ["subject_id", 1], ["created_at", "2015-02-08 16:33:10.772669"], ["updated_at", "2015-02-08 16:33:10.772669"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "HW Assignment #4"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Mat Wolf"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 75], ["assignment_id", 5], ["student_id", 4], ["created_at", "2015-02-08 16:33:10.780736"], ["updated_at", "2015-02-08 16:33:10.780736"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Physical Test"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Lakeshia Carlson"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 88], ["assignment_id", 4], ["student_id", 1], ["created_at", "2015-02-08 16:33:10.783890"], ["updated_at", "2015-02-08 16:33:10.783890"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "HW Assignment #4"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Lakeshia Carlson"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 92], ["assignment_id", 5], ["student_id", 1], ["created_at", "2015-02-08 16:33:10.786717"], ["updated_at", "2015-02-08 16:33:10.786717"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Make up Quiz # 2"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Tristan Bazemore"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 55], ["assignment_id", 7], ["student_id", 2], ["created_at", "2015-02-08 16:33:10.789551"], ["updated_at", "2015-02-08 16:33:10.789551"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "Test #1"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Lakeshia Carlson"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 77], ["assignment_id", 1], ["student_id", 1], ["created_at", "2015-02-08 16:33:10.792387"], ["updated_at", "2015-02-08 16:33:10.792387"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Physical Test"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Lakeshia Carlson"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 82], ["assignment_id", 4], ["student_id", 1], ["created_at", "2015-02-08 16:33:10.795451"], ["updated_at", "2015-02-08 16:33:10.795451"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "HW Assignment #4"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Mat Wolf"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 56], ["assignment_id", 5], ["student_id", 4], ["created_at", "2015-02-08 16:33:10.798179"], ["updated_at", "2015-02-08 16:33:10.798179"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Test #1"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Lakeshia Carlson"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 100], ["assignment_id", 1], ["student_id", 1], ["created_at", "2015-02-08 16:33:10.800918"], ["updated_at", "2015-02-08 16:33:10.800918"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "Make up Quiz # 2"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Tristan Bazemore"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 98], ["assignment_id", 7], ["student_id", 2], ["created_at", "2015-02-08 16:33:10.803656"], ["updated_at", "2015-02-08 16:33:10.803656"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Final Exam"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Lakeshia Carlson"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 44], ["assignment_id", 6], ["student_id", 1], ["created_at", "2015-02-08 16:33:10.806920"], ["updated_at", "2015-02-08 16:33:10.806920"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "HW Assignment #4"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Tristan Bazemore"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 55], ["assignment_id", 5], ["student_id", 2], ["created_at", "2015-02-08 16:33:10.809361"], ["updated_at", "2015-02-08 16:33:10.809361"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Final Exam"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Rand Wolf"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 66], ["assignment_id", 6], ["student_id", 3], ["created_at", "2015-02-08 16:33:10.811692"], ["updated_at", "2015-02-08 16:33:10.811692"]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1  [["name", "Physical Test"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1[0m  [["name", "Rand Wolf"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["score", 75], ["assignment_id", 4], ["student_id", 3], ["created_at", "2015-02-08 16:33:10.814068"], ["updated_at", "2015-02-08 16:33:10.814068"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."name" = ? LIMIT 1[0m  [["name", "Test 4"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."name" = ? LIMIT 1  [["name", "Rand Wolf"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 15], ["assignment_id", 3], ["student_id", 3], ["created_at", "2015-02-08 16:33:10.816686"], ["updated_at", "2015-02-08 16:33:10.816686"]]
+  [1m[36m (0.8ms)[0m  [1mcommit transaction[0m

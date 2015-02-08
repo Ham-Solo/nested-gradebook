@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
+  get 'student_password', to: 'students#password', as:'student_password'
+  get 'parent_password', to: 'parents#password', as:'parent_password'
 
   resources :sessions
 

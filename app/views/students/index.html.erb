@@ -1,7 +1,46 @@
 <h1><%= @student.name %></h1>
-<ul>
-  <% @student.grades.each do |grade|%>
-    <li><%= grade.assignment.name %>:       <%= grade.score %></li>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @student.grades.each do |g| %>
+      <tr>
+        <td><%= g.assignment.name %></td>
+        <td><%= g.score %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<h1>Change Password</h1>
+<%= form_for(@student) do |f| %>
+  <% if @student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@student.errors.count, "error") %> prohibited this parent from being saved:</h2>
+
+      <ul>
+      <% @student.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
   <% end %>
-</ul>
+
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :password_confirmation %><br>
+    <%= f.text_field :password_confirmation %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
 <br>
