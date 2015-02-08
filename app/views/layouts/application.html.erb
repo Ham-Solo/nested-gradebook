@@ -7,12 +7,12 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div>
+  <div class="current">
     <% if current_user %>
       Hello <%= current_user.name %>
       <%= link_to "Log Out", logout_path %>
     <% end %>
-  </div>
+  </div><br>
     <% flash.each do |key, value| %>
       <%= content_tag(:div, class: "alert alert -#{key}") do %>
         <p> <%= value %> </p>

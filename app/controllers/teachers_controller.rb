@@ -7,7 +7,7 @@ class TeachersController < ApplicationController
   def index
     @teachers = Teacher.all
     @teacher = Teacher.new
-
+    @parents = Parent.all
   end
 
   # GET /teachers/1

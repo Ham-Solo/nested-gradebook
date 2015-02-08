@@ -1,5 +1,7 @@
-<h1>Listing Teachers</h1>
-
+<%= link_to 'New Teacher', new_teacher_path %> |
+<%= link_to 'New Parent/Student', new_parent_path %> |
+<%= link_to 'New Assignment', new_assignment_path %> |
+<h1>Teachers</h1>
 <table>
   <thead>
     <tr>
@@ -22,8 +24,32 @@
   </tbody>
 </table>
 
-<br>
+<% if current_user.students.any? %>
+<h1>Students</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Parent</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
 
-<%= link_to 'New Teacher', new_teacher_path %> |
-<%= link_to 'New Parent/Student', new_parent_path %> |
-<%= link_to 'New Assignment', new_assignment_path %> |
+    <tbody>
+      <% current_user.students.each do |s| %>
+        <% @parents.where(id: == s.parent_id) do |p| %>
+          <tr>
+            <td><%= s.name %></td>
+            <td><%= s.email %></td>
+            <td><%= p.name %></td>
+            <td><%= link_to 'Show', s %></td>
+            <td><%= link_to 'Edit', edit_student_path(s) %></td>
+            <td><%= link_to 'Destroy', s, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      <% end %>
+    </tbody>
+  </table>
+<% end %>
+<br>
