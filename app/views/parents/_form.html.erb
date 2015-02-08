@@ -22,11 +22,11 @@
   </div>
   <div class="field">
     <%= f.label :password %><br>
-    <%= f.text_field :password %>
+    <%= f.password_field :password %>
   </div>
   <div class="field">
     <%= f.label :password_confirmation %><br>
-    <%= f.text_field :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
   </div>
 
   <h1>New Student</h1>
@@ -41,11 +41,11 @@
         <%= student.text_field :email %>
       </div><div class="field">
         <%= student.label :password %><br>
-        <%= student.text_field :password %>
+        <%= student.password_field :password %>
       </div>
       </div><div class="field">
         <%= student.label :password_confirmation %><br>
-        <%= student.text_field :password_confirmation %>
+        <%= student.password_field :password_confirmation %>
       </div>
       <div class="field">
         <%= student.label :teacher_id %><br>
