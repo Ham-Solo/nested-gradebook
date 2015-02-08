@@ -24,7 +24,6 @@
   </tbody>
 </table>
 
-<% if current_user.students.any? %>
 <h1>Students</h1>
   <table>
     <thead>
@@ -38,7 +37,7 @@
 
     <tbody>
       <% current_user.students.each do |s| %>
-        <% @parents.where(id: == s.parent_id) do |p| %>
+        <% @parents.where(id: s.parent_id) do |p| %>
           <tr>
             <td><%= s.name %></td>
             <td><%= s.email %></td>
@@ -51,5 +50,4 @@
       <% end %>
     </tbody>
   </table>
-<% end %>
 <br>
