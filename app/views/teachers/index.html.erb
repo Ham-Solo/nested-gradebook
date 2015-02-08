@@ -45,7 +45,8 @@
             <td><%= g.assignment.name %></td>
             <td><%= g.score %></td>
             <td><%= s.parent.name%></td>
-            <td><%= link_to 'Edit', edit_student_path(s) %></td>
+            <td><%= link_to 'Edit student', edit_student_path(s) %></td>
+            <td><%= link_to 'Edit Assignment', edit_assignment_path(g.assignment) %></td>
             <td><%= link_to 'Delete', s, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
