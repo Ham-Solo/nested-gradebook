@@ -6,5 +6,8 @@ class Teacher < ActiveRecord::Base
   accepts_nested_attributes_for :students
   accepts_nested_attributes_for :grades
   accepts_nested_attributes_for :assignments
+  validates :email, uniqueness: true
+  validates :name, presence: true
+
 
 end

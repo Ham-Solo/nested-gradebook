@@ -15,9 +15,9 @@
   <ul>
     <% @teacher.students.each do |s| %>
       <h3><%= s.name %></h3>
-      <% s.grades.each do |grade|%>
+      <% s.grades.each do |grade| %>
 
-        <li><%= link_to grade.assignment.name, assignment_path %>:       <%= link_to grade.score, grade_path %></li>
+        <li><%= grade.assignment.name %>:       <%= grade.score %></li>
       <% end %>
     <% end %>
   </ul>

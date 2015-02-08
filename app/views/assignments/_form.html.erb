@@ -1,7 +1,7 @@
 <%= form_for(@assignment) do |f| %>
   <% if @assignment.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@assignment.errors.count, "error") %> prohibited this assignment from being saved:</h2>
+      <h2><%= pluralize(@assignment.errors.count, "error") %> prohibited this parent from being saved:</h2>
 
       <ul>
       <% @assignment.errors.full_messages.each do |message| %>
@@ -11,15 +11,28 @@
     </div>
   <% end %>
 
+
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
   </div>
   <div class="field">
     <%= f.label :subject_id %><br>
-    <%= f.text_field :subject_id %>
+    <%= f.collection_select :subject_id, Subject.all, :id, :name %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <%= f.fields_for :grades do |g| %>
+    <div class="student_fields">
+      <div class="field">
+        <%= g.label :score %><br>
+        <%= g.number_field :score %>
+      </div>
+      <div class="field">
+        <%= g.label :student_id %><br>
+        <%= g.collection_select :student_id, Student.all, :id, :name %>
+      </div>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
 <% end %>

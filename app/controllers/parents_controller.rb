@@ -32,7 +32,7 @@ class ParentsController < ApplicationController
 
     respond_to do |format|
       if @parent.save
-        format.html { redirect_to @parent, notice: 'Parent was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Parent and Student were successfully created.' }
         format.json { render :show, status: :created, location: @parent }
       else
         format.html { render :new }
@@ -46,7 +46,7 @@ class ParentsController < ApplicationController
   def update
     respond_to do |format|
       if @parent.update(parent_params)
-        format.html { redirect_to @parent, notice: 'Parent was successfully updated.' }
+        format.html { redirect_to root_path, notice: 'Parent and Student were successfully updated.' }
         format.json { render :show, status: :ok, location: @parent }
       else
         format.html { render :edit }
