@@ -24480,3 +24480,1656 @@ Migrating to CreateGrades (20150207165751)
   [1m[35mSQL (0.3ms)[0m  INSERT INTO "grades" ("score", "assignment_id", "student_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["score", 15], ["assignment_id", 3], ["student_id", 3], ["created_at", "2015-02-08 16:33:10.816686"], ["updated_at", "2015-02-08 16:33:10.816686"]]
   [1m[36m (0.8ms)[0m  [1mcommit transaction[0m
   [1m[36mAssignment Load (2.7ms)[0m  [1mSELECT "assignments".* FROM "assignments"[0m
+
+
+Started GET "/logout" for ::1 at 2015-02-09 09:44:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:44:42 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 1678ms (Views: 1676.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-7b41c7d7d21c4f7a284f48674db12d03.css?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/scaffolds-b8ab6034cb76044946562decca5452d3.css?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:44:44 -0500
+
+
+Started POST "/sessions" for ::1 at 2015-02-09 09:44:57 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AT9e/+6Y8bWGze5z5ikDpc3dOutQpYgnBZ9Kop+dBexLGyFq9DqGaq3bs1Gl9EtA2lvy9uo8AlV9yRuOaSv4Yg==", "email"=>"fire@wot.com", "password"=>"[FILTERED]", "commit"=>"login"}
+  [1m[35mTeacher Load (0.2ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."email" = ? LIMIT 1  [["email", "fire@wot.com"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."email" = ? LIMIT 1[0m  [["email", "fire@wot.com"]]
+Redirected to http://localhost:3000/students
+Completed 302 Found in 109ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:44:57 -0500
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGrade Load (0.2ms)[0m  [1mSELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?[0m  [["student_id", 3]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered students/index.html.erb within layouts/application (50.8ms)
+  [1m[35mStudent Load (0.2ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ?  ORDER BY "students"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ?  ORDER BY "students"."id" ASC LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 221ms (Views: 217.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/scaffolds-b8ab6034cb76044946562decca5452d3.css?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-09 09:44:58 -0500
+
+
+Started GET "/students/2/edit" for ::1 at 2015-02-09 09:45:05 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 2]]
+Redirected to http://localhost:3000/
+Filter chain halted as :permission? rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:45:05 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:45:05 -0500
+Processing by StudentsController#index as HTML
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mGrade Load (0.1ms)[0m  SELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?  [["student_id", 3]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered students/index.html.erb within layouts/application (4.0ms)
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ?  ORDER BY "students"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ?  ORDER BY "students"."id" ASC LIMIT 1  [["id", 3]]
+Completed 200 OK in 113ms (Views: 111.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/scaffolds-b8ab6034cb76044946562decca5452d3.css?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-09 09:45:06 -0500
+
+
+Started GET "/students/4/edit" for ::1 at 2015-02-09 09:45:15 -0500
+Processing by StudentsController#edit as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1[0m  [["id", 4]]
+Redirected to http://localhost:3000/
+Filter chain halted as :permission? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:45:15 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:45:15 -0500
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?[0m  [["student_id", 3]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered students/index.html.erb within layouts/application (5.4ms)
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ?  ORDER BY "students"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ?  ORDER BY "students"."id" ASC LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 116ms (Views: 114.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/scaffolds-b8ab6034cb76044946562decca5452d3.css?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-09 09:45:15 -0500
+
+
+Started GET "/parents" for ::1 at 2015-02-09 09:45:24 -0500
+Processing by ParentsController#index as HTML
+  [1m[35mParent Load (0.1ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 5ms
+
+ActiveRecord::RecordNotFound (Couldn't find Parent with 'id'=):
+  app/controllers/parents_controller.rb:9:in `index'
+
+
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (30.9ms)
+
+
+Started GET "/parents" for ::1 at 2015-02-09 09:53:09 -0500
+Processing by ParentsController#index as HTML
+  [1m[36mParent Load (0.1ms)[0m  [1mSELECT  "parents".* FROM "parents" WHERE "parents"."id" = ? LIMIT 1[0m  [["id", nil]]
+Completed 404 Not Found in 1ms
+
+ActiveRecord::RecordNotFound (Couldn't find Parent with 'id'=):
+  app/controllers/parents_controller.rb:9:in `index'
+
+
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (25.0ms)
+
+
+Started GET "/parents" for ::1 at 2015-02-09 09:57:02 -0500
+
+SyntaxError (/Users/owenham/nested-gradebook/app/controllers/application_controller.rb:49: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/application_controller.rb:49: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/parents_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (3.6ms)
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (22.4ms)
+
+
+Started GET "/parents" for ::1 at 2015-02-09 09:57:03 -0500
+
+SyntaxError (/Users/owenham/nested-gradebook/app/controllers/application_controller.rb:49: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/application_controller.rb:49: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/parents_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.9ms)
+  Rendered /Users/owenham/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/diagnostics.html.erb within rescues/layout (23.2ms)
+
+
+Started GET "/parents" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by ParentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:30 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:31 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:57:37 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:58:07 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:58:53 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:58:53 -0500
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGrade Load (0.2ms)[0m  [1mSELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?[0m  [["student_id", 3]]
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered students/index.html.erb within layouts/application (22.1ms)
+  [1m[35mStudent Load (0.2ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ?  ORDER BY "students"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ?  ORDER BY "students"."id" ASC LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 145ms (Views: 133.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/scaffolds-b8ab6034cb76044946562decca5452d3.css?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/application-7b41c7d7d21c4f7a284f48674db12d03.css?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-09 09:58:53 -0500
+
+
+Started GET "/parents" for ::1 at 2015-02-09 09:58:57 -0500
+Processing by ParentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:58:57 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/parents" for ::1 at 2015-02-09 09:58:58 -0500
+Processing by ParentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :student? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:58:58 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/students
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/students" for ::1 at 2015-02-09 09:58:58 -0500
+Processing by StudentsController#index as HTML
+  [1m[35mStudent Load (0.2ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?[0m  [["student_id", 3]]
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 6]]
+  [1m[36mAssignment Load (0.3ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered students/index.html.erb within layouts/application (8.9ms)
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."id" = ?  ORDER BY "students"."id" ASC LIMIT 1  [["id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."id" = ?  ORDER BY "students"."id" ASC LIMIT 1[0m  [["id", 3]]
+Completed 200 OK in 113ms (Views: 109.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/scaffolds-b8ab6034cb76044946562decca5452d3.css?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/application-7b41c7d7d21c4f7a284f48674db12d03.css?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-09 09:58:58 -0500
+
+
+Started GET "/logout" for ::1 at 2015-02-09 09:59:18 -0500
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:59:18 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 116ms (Views: 115.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2015-02-09 09:59:42 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IWrYYqGDvja2JR9MTKzz7GhITCAl8/pae0f+Aa7v/XtrTqf3uyHJ6Z0zQm4PcbsJf86EPZ9qcCgDEa8tWFkA9Q==", "email"=>"hammer@wot.com", "password"=>"[FILTERED]", "commit"=>"login"}
+  [1m[35mTeacher Load (0.2ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."email" = ? LIMIT 1  [["email", "hammer@wot.com"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."email" = ? LIMIT 1[0m  [["email", "hammer@wot.com"]]
+  [1m[35mParent Load (0.1ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."email" = ? LIMIT 1  [["email", "hammer@wot.com"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 87ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:59:42 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 109ms (Views: 107.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/scaffolds-b8ab6034cb76044946562decca5452d3.css?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/application-7b41c7d7d21c4f7a284f48674db12d03.css?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-09 09:59:43 -0500
+
+
+Started POST "/sessions" for ::1 at 2015-02-09 09:59:52 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SmUefFoLNxO3SWH+GvKDgOu5HohkU4spUflbinnEIr4AQWHpQKlAzJxfPNxZL8tl/D/Wld7KAVsprwqmj3LfMA==", "email"=>"hammer@wot.com", "password"=>"[FILTERED]", "commit"=>"login"}
+  [1m[36mTeacher Load (0.1ms)[0m  [1mSELECT  "teachers".* FROM "teachers" WHERE "teachers"."email" = ? LIMIT 1[0m  [["email", "hammer@wot.com"]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT  "students".* FROM "students" WHERE "students"."email" = ? LIMIT 1  [["email", "hammer@wot.com"]]
+  [1m[36mParent Load (0.1ms)[0m  [1mSELECT  "parents".* FROM "parents" WHERE "parents"."email" = ? LIMIT 1[0m  [["email", "hammer@wot.com"]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 80ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 09:59:52 -0500
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 100ms (Views: 99.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/scaffolds-b8ab6034cb76044946562decca5452d3.css?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/application-7b41c7d7d21c4f7a284f48674db12d03.css?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:52 -0500
+
+
+Started POST "/sessions" for ::1 at 2015-02-09 09:59:59 -0500
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JxlWpPe2Uz5CulVO5Qrx/KFZH157WxuQM9tOlldjHOFtPSkx7RQk4WmsCGym17kZtt/XQ8HCkeJLjR+6odXhbw==", "email"=>"hammer@wot.com", "password"=>"[FILTERED]", "commit"=>"login"}
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."email" = ? LIMIT 1  [["email", "hammer@wot.com"]]
+  [1m[36mStudent Load (0.1ms)[0m  [1mSELECT  "students".* FROM "students" WHERE "students"."email" = ? LIMIT 1[0m  [["email", "hammer@wot.com"]]
+  [1m[35mParent Load (0.1ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."email" = ? LIMIT 1  [["email", "hammer@wot.com"]]
+Redirected to http://localhost:3000/parents
+Completed 302 Found in 78ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/parents" for ::1 at 2015-02-09 09:59:59 -0500
+Processing by ParentsController#index as HTML
+  [1m[36mParent Load (0.1ms)[0m  [1mSELECT  "parents".* FROM "parents" WHERE "parents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mStudent Load (0.2ms)[0m  SELECT "students".* FROM "students" WHERE "students"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?[0m  [["student_id", 3]]
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?[0m  [["student_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered parents/index.html.erb within layouts/application (15.3ms)
+  [1m[36mParent Load (0.2ms)[0m  [1mSELECT  "parents".* FROM "parents" WHERE "parents"."id" = ?  ORDER BY "parents"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."id" = ?  ORDER BY "parents"."id" ASC LIMIT 1  [["id", 3]]
+Completed 200 OK in 133ms (Views: 129.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/scaffolds-b8ab6034cb76044946562decca5452d3.css?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/application-7b41c7d7d21c4f7a284f48674db12d03.css?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-09 09:59:59 -0500
+
+
+Started GET "/students" for ::1 at 2015-02-09 10:00:04 -0500
+Processing by StudentsController#index as HTML
+Redirected to http://localhost:3000/
+Filter chain halted as :parent? rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-02-09 10:00:04 -0500
+Processing by SessionsController#new as HTML
+Redirected to http://localhost:3000/parents
+Filter chain halted as :redirect_path rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/parents" for ::1 at 2015-02-09 10:00:04 -0500
+Processing by ParentsController#index as HTML
+  [1m[36mParent Load (0.1ms)[0m  [1mSELECT  "parents".* FROM "parents" WHERE "parents"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mStudent Load (0.1ms)[0m  SELECT "students".* FROM "students" WHERE "students"."parent_id" = ?  [["parent_id", 3]]
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?[0m  [["student_id", 3]]
+  [1m[35mTeacher Load (0.1ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 6]]
+  [1m[35mAssignment Load (0.2ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mAssignment Load (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mGrade Load (0.1ms)[0m  [1mSELECT "grades".* FROM "grades" WHERE "grades"."student_id" = ?[0m  [["student_id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "teachers".* FROM "teachers" WHERE "teachers"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mAssignment Load (0.1ms)[0m  [1mSELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1[0m  [["id", 5]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "assignments".* FROM "assignments" WHERE "assignments"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered parents/index.html.erb within layouts/application (18.8ms)
+  [1m[36mParent Load (0.1ms)[0m  [1mSELECT  "parents".* FROM "parents" WHERE "parents"."id" = ?  ORDER BY "parents"."id" ASC LIMIT 1[0m  [["id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "parents".* FROM "parents" WHERE "parents"."id" = ?  ORDER BY "parents"."id" ASC LIMIT 1  [["id", 3]]
+Completed 200 OK in 125ms (Views: 122.8ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/assignments-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/grades-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/sessions-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/parents-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/students-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/subjects-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/scaffolds-b8ab6034cb76044946562decca5452d3.css?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/teachers-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/application-7b41c7d7d21c4f7a284f48674db12d03.css?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/turbolinks-da8ddad9c2c5483d4c5c30c1ce325253.js?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/assignments-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/grades-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/parents-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/sessions-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/students-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/subjects-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/teachers-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-02-09 10:00:04 -0500
+
+
+Started GET "/assets/application-8e78732aae8643f2ed4d2f784012b35a.js?body=1" for ::1 at 2015-02-09 10:00:04 -0500

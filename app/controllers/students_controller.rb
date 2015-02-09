@@ -1,7 +1,7 @@
 class StudentsController < ApplicationController
   before_action :set_student, only: [:show, :edit, :update, :destroy]
   before_action :permission?, except: [:index, :update]
-
+  before_action :parent?
   # GET /students
   # GET /students.json
   def index

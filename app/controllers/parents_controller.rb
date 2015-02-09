@@ -1,7 +1,7 @@
 class ParentsController < ApplicationController
   before_action :set_parent, only: [:show, :edit, :update, :destroy]
   before_action :permission?, except: [:index, :update]
-
+  before_action :student?
   # GET /parents
   # GET /parents.json
   def index
